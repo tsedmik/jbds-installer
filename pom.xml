@@ -20,6 +20,7 @@
 	  <swtbot-juno.site>http://download.eclipse.org/technology/swtbot/releases/latest</swtbot-juno.site>
 	  <!-- SWT Bot Ext -->
 	  <tests-indigo.site>http://download.jboss.org/jbosstools/updates/nightly/coretests/3.3.indigo</tests-indigo.site>
+	  <tests-juno.site>http://download.jboss.org/jbosstools/updates/nightly/coretests/4.0.juno</tests-juno.site>
 	  <!-- JBTIS -->
 	  <jbtis-400ci.site>http://download.jboss.org/jbosstools/updates/integration/juno/integration-stack/aggregate/4.0.0</jbtis-400ci.site>
 	  <!-- JBDS Plugin -->
@@ -27,6 +28,9 @@
 	  <!-- JBoss Tools -->
 	  <jbt-juno.site>http://download.jboss.org/jbosstools/updates/stable/juno</jbt-juno.site>
 	  <jbt-401final.site>http://download.jboss.org/jbosstools/updates/stable/juno</jbt-401final.site>
+	  <!-- Eclipse Update Sites -->
+	  <eclipse-indigo.site>http://download.eclipse.org/releases/indigo</eclipse-indigo.site>
+	  <eclipse-juno.site>http://download.eclipse.org/releases/juno</eclipse-juno.site>
 	</properties>
 
 	<repositories>
@@ -59,8 +63,10 @@
 	  <module>jbds-5.0.2.GA</module>
 	  <module>jbds-5.0.2.GA_soa-5.0.4.GA</module>
 	  <module>jbds-6.0.1.GA</module>
+	  <module>jbds-6.0.1.GA_bpmn2</module>
 	  <module>jbds-6.0.1.GA_jbtis-4.0.0.CI</module>
 	  <module>jbt-4.0.1.Final</module>
+	  <module>jbt-4.0.1.Final_bpmn2</module>
 	  <module>jbt-4.0.1.Final_jbtis-4.0.0.CI</module>
 	</modules>
 
