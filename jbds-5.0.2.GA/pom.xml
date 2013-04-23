@@ -50,7 +50,7 @@
 		<plugin>
 		  <groupId>org.jboss.apodhrad</groupId>
 		  <artifactId>jbds-plugin</artifactId>
-		  <version>0.0.1-SNAPSHOT</version>
+		  <version>${jbds.plugin.version}</version>
 		  <configuration>
 		    <features>
 		      <param>org.eclipse.swtbot.feature.group</param>
