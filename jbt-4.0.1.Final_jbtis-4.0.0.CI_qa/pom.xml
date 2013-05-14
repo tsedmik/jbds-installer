@@ -27,7 +27,7 @@
 	  </repository>
 	  <repository>
 	    <id>reddeer</id>
-	    <url>${reddeer-juno020.site}</url>
+	    <url>${reddeer-juno.site}</url>
 	    <layout>update-site</layout>
 	  </repository>
 	  <repository>
@@ -87,6 +87,7 @@
 		      <param>org.jboss.reddeer.feature.feature.group</param>
 		      <param>org.jboss.tools.test.feature.feature.group</param>
 		      <param>org.sonatype.tycho.m2e.feature.feature.group</param>
+		      <param>org.jboss.tools.community.project.examples.feature.feature.group</param>
 		    </features>
 		  </configuration>
 		</execution>
