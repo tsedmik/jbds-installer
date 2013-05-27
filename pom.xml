@@ -31,7 +31,6 @@
 	  <!-- JBoss Tools -->
 	  <jbt-juno.site>http://download.jboss.org/jbosstools/updates/stable/juno</jbt-juno.site>
 	  <jbt-401final.site>http://download.jboss.org/jbosstools/updates/stable/juno</jbt-401final.site>
-	  <jbt-410alpha1.site>http://download.jboss.org/jbosstools/updates/stable/juno</jbt-410alpha1.site>
 	  <jbt-410beta1a.site>http://download.jboss.org/jbosstools/updates/JBossTools-4.1.0.Beta1a.core</jbt-410beta1a.site>
 	  <!-- Eclipse Update Sites -->
 	  <eclipse-indigo.site>http://download.eclipse.org/releases/indigo</eclipse-indigo.site>
