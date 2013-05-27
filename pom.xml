@@ -69,6 +69,7 @@
 	  <module>jbds-6.0.1.GA</module>
 	  <module>jbds-6.0.1.GA_bpmn2</module>
 	  <module>jbds-6.0.1.GA_jbtis-4.0.0.CI</module>
+	  <module>jbds-6.0.1.GA_teiid-8.1.0.Final</module>
 	  <module>jbt-4.0.1.Final</module>
 	  <module>jbt-4.0.1.Final_bpmn2</module>
 	  <module>jbt-4.0.1.Final_jbtis-4.0.0.CI</module>

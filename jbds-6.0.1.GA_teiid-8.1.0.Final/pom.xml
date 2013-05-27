@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+	  <groupId>org.jboss.apodhrad.jbds.installer</groupId>
+	  <artifactId>parent</artifactId>
+	  <version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>jbds-6.0.1.GA_teiid-8.1.0.Final</artifactId>
+	<packaging>pom</packaging>
+
+	<properties>
+	  <teiid.site>http://download.jboss.org/jbosstools/updates/release/juno/soa-tooling/teiiddesigner/8.1.0.Final</teiid.site>
+	</properties>
+	
+	<repositories>
+	  <repository>
+	    <id>teiid</id>
+	    <url>${teiid.site}</url>
+	    <layout>update-site</layout>
+	  </repository>
+	</repositories>
+
+	<build>
+	  <plugins>
+	    <plugin>
+	      <groupId>org.jboss.apodhrad</groupId>
+	      <artifactId>jbds-plugin</artifactId>
+	      <version>${jbds.plugin.version}</version>
+	      <executions>
+		<execution>
+		  <id>jbds</id>
+		  <goals>
+		    <goal>install</goal>
+		  </goals>
+		  <configuration>
+		    <jbds.installer>${jbds-601ga.installer}</jbds.installer>
+		    <features combine.children="append">
+		      <param>org.teiid.datatools.connectivity.feature.feature.group</param>
+		      <param>org.teiid.designer.feature.feature.group</param>
+		      <param>org.teiid.designer.runtime.feature.feature.group</param>
+		      <param>org.teiid.designer.teiid.client.feature.feature.group</param>
+		    </features>
+		  </configuration>
+		</execution>
+	      </executions>
+	    </plugin>
+	  </plugins>
+	</build>
+
+</project>
