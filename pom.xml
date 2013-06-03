@@ -76,6 +76,7 @@
 	  <module>jbt-4.0.1.Final_bpmn2</module>
 	  <module>jbt-4.0.1.Final_jbtis-4.0.0.CI</module>
 	  <module>jbt-4.0.1.Final_teiid-8.1.0.Final</module>
+	  <module>jbt-4.0.1.Final_switchyard-0.8.0.Final</module>
 	  <module>jbt-4.1.0.Beta1a</module>
 	  <module>jbt-4.1.0.Beta1b</module>
 	</modules>
