@@ -64,6 +64,34 @@
 	  </pluginRepository>
 	</pluginRepositories>
 
+	<profiles>
+	  <profile>
+	    <id>test</id>
+	    <build>
+	      <plugins>
+		<plugin>
+		  <groupId>com.googlecode.maven-download-plugin</groupId>
+		  <artifactId>maven-download-plugin</artifactId>
+		  <version>1.1.0</version>
+		  <executions>
+		    <execution>
+		      <id>get-test</id>
+		      <phase>pre-integration-test</phase>
+		      <goals>
+			<goal>wget</goal>
+		      </goals>
+		      <configuration>
+			<url>https://repository.jboss.org/nexus/content/groups/public/org/jboss/tools/installation-tests/scripts/4.1.0.Alpha1-SNAPSHOT/scripts-4.1.0.Alpha1-20130304.132450-33-delivery.zip</url>
+			<unpack>true</unpack>
+		      </configuration>
+		    </execution>
+		  </executions>
+		</plugin>
+	      </plugins>
+	    </build>
+	  </profile>
+	</profiles>
+
 	<modules>
 	  <module>jbds-5.0.2.GA</module>
 	  <module>jbds-5.0.2.GA_soa-5.0.4.GA</module>
