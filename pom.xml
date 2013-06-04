@@ -26,6 +26,7 @@
 	  <tests-juno.site>http://download.jboss.org/jbosstools/updates/nightly/coretests/4.0.juno</tests-juno.site>
 	  <!-- JBTIS -->
 	  <jbtis-400ci.site>http://download.jboss.org/jbosstools/updates/integration/juno/integration-stack/aggregate/4.0.0</jbtis-400ci.site>
+	  <jbtis-401ci.site>http://download.jboss.org/jbosstools/updates/integration/juno/integration-stack/aggregate/4.0.1</jbtis-401ci.site>
 	  <!-- JBDS Plugin -->
 	  <jbds.plugin.version>0.0.1-SNAPSHOT</jbds.plugin.version>
 	  <!-- JBoss Tools -->
