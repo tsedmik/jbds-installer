@@ -9,6 +9,12 @@
 	<artifactId>jbds-6.0.1.GA_jbdsis-6.0.0.GA</artifactId>
 	<packaging>pom</packaging>
 
+	<properties>
+	  <itest.site>file:/home/apodhrad/Projects/jbosstools-integration-tests/site/target/repository</itest.site>
+	  <itest.plugin>org.jboss.tools.bpel.ui.bot.test</itest.plugin>
+	  <itest.class>org.jboss.tools.bpel.ui.bot.test.suite.AllTests</itest.class>
+	</properties>
+
 	<repositories>
 	  <repository>
 	    <id>jbdsis</id>
@@ -59,6 +65,7 @@
 	</build>
 
 	<profiles>
+	  <!-- For writing tests -->
 	  <profile>
 	    <id>qa</id>
 	    <repositories>
@@ -85,7 +92,7 @@
 		  <artifactId>jbds-plugin</artifactId>
 		  <version>${jbds.plugin.version}</version>
 		  <configuration>
-		    <features>
+		    <features combine.children="append">
 		      <param>org.eclipse.swtbot.eclipse.feature.group</param>
 		      <param>org.eclipse.swtbot.eclipse.gef.feature.group</param>
 		      <param>org.eclipse.swtbot.eclipse.test.junit.feature.group</param>
@@ -97,6 +104,48 @@
 		      <param>org.jboss.tools.test.feature.feature.group</param>
 		    </features>
 		  </configuration>
+		</plugin>
+	      </plugins>
+	    </build>
+	  </profile>
+	  <!-- For running integration tests -->
+	  <profile>
+	    <id>itest</id>
+	    <properties>
+	      <usage_reporting_enabled>false</usage_reporting_enabled>
+	    </properties>
+	    <repositories>
+	      <repository>
+		<id>itests</id>
+		<url>${itest.site}</url>
+		<layout>update-site</layout>
+	      </repository>
+	    </repositories>
+	    <build>
+	      <plugins>
+		<plugin>
+		  <groupId>org.jboss.apodhrad</groupId>
+		  <artifactId>jbds-plugin</artifactId>
+		  <version>${jbds.plugin.version}</version>
+		  <configuration>
+		    <features combine.children="append">
+		      <param>org.jboss.tools.itests.soa.feature.feature.group</param>
+		    </features>
+		  </configuration>
+		  <executions>
+		    <execution>
+		      <id>runbot</id>
+		      <goals>
+			<goal>runbot</goal>
+		      </goals>
+		      <configuration>
+			<eclipse.home>${project.build.directory}/jbdevstudio/studio</eclipse.home>
+			<product>com.jboss.jbds.product.product</product>
+			<test.plugin>${itest.plugin}</test.plugin>
+			<test.class>${itest.class}</test.class>
+		      </configuration>
+		    </execution>
+		  </executions>
 		</plugin>
 	      </plugins>
 	    </build>
