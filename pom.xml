@@ -27,6 +27,8 @@
 	  <!-- JBTIS -->
 	  <jbtis-400ci.site>http://download.jboss.org/jbosstools/updates/integration/juno/integration-stack/aggregate/4.0.0</jbtis-400ci.site>
 	  <jbtis-401ci.site>http://download.jboss.org/jbosstools/updates/integration/juno/integration-stack/aggregate/4.0.1</jbtis-401ci.site>
+	  <!-- JBDSIS -->
+	  <jbdsis-600ga.site>http://www.qa.jboss.com/binaries/RHDS/builds/staging/jbdsis-6.0.0-updatesite</jbdsis-600ga.site>
 	  <!-- JBDS Plugin -->
 	  <jbds.plugin.version>0.0.1-SNAPSHOT</jbds.plugin.version>
 	  <!-- JBoss Tools -->
@@ -98,6 +100,7 @@
 	  <module>jbds-5.0.2.GA_soa-5.0.4.GA</module>
 	  <module>jbds-6.0.1.GA</module>
 	  <module>jbds-6.0.1.GA_bpmn2</module>
+	  <module>jbds-6.0.1.GA_jbdsis-6.0.0.GA</module>
 	  <module>jbds-6.0.1.GA_jbtis-4.0.0.CI</module>
 	  <module>jbds-6.0.1.GA_teiid-8.1.0.Final</module>
 	  <module>jbds-7.0.0.Beta1</module>
