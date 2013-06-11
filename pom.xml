@@ -39,6 +39,10 @@
 	  <!-- Eclipse Update Sites -->
 	  <eclipse-indigo.site>http://download.eclipse.org/releases/indigo</eclipse-indigo.site>
 	  <eclipse-juno.site>http://download.eclipse.org/releases/juno</eclipse-juno.site>
+	  <!-- SOA Platform -->
+	  <soa531.url>http://10.34.32.168/released/soa-5.3.1.GA/soa-p-5.3.1.GA.zip</soa531.url>
+	  <!-- Other Properties -->
+	  <requirementsDirectory>${project.build.directory}/requirements</requirementsDirectory>
 	</properties>
 
 	<repositories>
@@ -65,6 +69,16 @@
 	      <enabled>true</enabled>
 	    </snapshots>
 	  </pluginRepository>
+	  <pluginRepository>
+	    <id>sonatype-public-repository</id>
+	    <url>https://oss.sonatype.org/content/groups/public</url>
+	    <snapshots>
+	      <enabled>true</enabled>
+	    </snapshots>
+	    <releases>
+	      <enabled>true</enabled>
+	    </releases>
+	  </pluginRepository>
 	</pluginRepositories>
 
 	<profiles>
@@ -86,6 +100,165 @@
 		      <configuration>
 			<url>https://repository.jboss.org/nexus/content/groups/public/org/jboss/tools/installation-tests/scripts/4.1.0.Alpha1-SNAPSHOT/scripts-4.1.0.Alpha1-20130304.132450-33-delivery.zip</url>
 			<unpack>true</unpack>
+		      </configuration>
+		    </execution>
+		  </executions>
+		</plugin>
+	      </plugins>
+	    </build>
+	  </profile>
+	  <!-- Install SOA Platform 5.2.0 -->
+	  <!-- You have to specify soa520.url property -->
+	  <profile>
+	    <id>soa520</id>
+	    <properties>
+	      <soa.version>soa520</soa.version>
+	      <esb.version>4.10</esb.version>
+	      <swtbot.properties>${requirementsDirectory}/${soa.version}.properties</swtbot.properties>
+	      <swtbot.test.properties.file>${swtbot.properties}</swtbot.test.properties.file>
+	    </properties>
+	    <build>
+	      <plugins>
+		<plugin>
+		  <groupId>com.googlecode.maven-download-plugin</groupId>
+		  <artifactId>maven-download-plugin</artifactId>
+		  <version>1.1.0</version>
+		  <executions>
+		    <execution>
+		      <id>get-soa</id>
+		      <phase>pre-integration-test</phase>
+		      <goals>
+			<goal>wget</goal>
+		      </goals>
+		      <configuration>
+			<url>${soa520.url}</url>
+			<unpack>true</unpack>
+			<outputDirectory>${requirementsDirectory}</outputDirectory>
+		      </configuration>
+		    </execution>
+		  </executions>
+		</plugin>
+		<plugin>
+		  <artifactId>maven-antrun-plugin</artifactId>
+		  <version>1.7</version>
+		  <executions>
+		    <execution>
+		      <id>set-soa-user</id>
+		      <phase>pre-integration-test</phase>
+		      <goals>
+			<goal>run</goal>
+		      </goals>
+		      <configuration>
+			<target>
+			  <echo file="${requirementsDirectory}/jboss-soa-p-5/jboss-as/server/default/conf/props/soa-users.properties">admin=admin</echo>
+			  <echo file="${swtbot.properties}">SERVER=SOA,5.2,default,${requirementsDirectory}/jboss-soa-p-5/jboss-as${line.separator}ESB=${esb.version},${requirementsDirectory}/jboss-soa-p-5</echo>
+			</target>
+		      </configuration>
+		    </execution>
+		  </executions>
+		</plugin>
+	      </plugins>
+	    </build>
+	  </profile>
+	  <!-- Install SOA Platform 5.3.0 -->
+	  <!-- You have to specify soa530.url property -->
+	  <profile>
+	    <id>soa530</id>
+	    <properties>
+	      <soa.version>soa530</soa.version>
+	      <esb.version>4.11</esb.version>
+	      <swtbot.properties>${requirementsDirectory}/${soa.version}.properties</swtbot.properties>
+	      <swtbot.test.properties.file>${swtbot.properties}</swtbot.test.properties.file>
+	    </properties>
+	    <build>
+	      <plugins>
+		<plugin>
+		  <groupId>com.googlecode.maven-download-plugin</groupId>
+		  <artifactId>maven-download-plugin</artifactId>
+		  <version>1.1.0</version>
+		  <executions>
+		    <execution>
+		      <id>get-soa</id>
+		      <phase>pre-integration-test</phase>
+		      <goals>
+			<goal>wget</goal>
+		      </goals>
+		      <configuration>
+			<url>${soa530.url}</url>
+			<unpack>true</unpack>
+			<outputDirectory>${requirementsDirectory}</outputDirectory>
+		      </configuration>
+		    </execution>
+		  </executions>
+		</plugin>
+		<plugin>
+		  <artifactId>maven-antrun-plugin</artifactId>
+		  <version>1.7</version>
+		  <executions>
+		    <execution>
+		      <id>set-soa-user</id>
+		      <phase>pre-integration-test</phase>
+		      <goals>
+			<goal>run</goal>
+		      </goals>
+		      <configuration>
+			<target>
+			  <echo file="${requirementsDirectory}/jboss-soa-p-5/jboss-as/server/default/conf/props/soa-users.properties">admin=admin</echo>
+			  <echo file="${swtbot.properties}">SERVER=SOA,5.3,default,${requirementsDirectory}/jboss-soa-p-5/jboss-as${line.separator}ESB=${esb.version},${requirementsDirectory}/jboss-soa-p-5</echo>
+			</target>
+		      </configuration>
+		    </execution>
+		  </executions>
+		</plugin>
+	      </plugins>
+	    </build>
+	  </profile>
+	  <!-- Install SOA Platform 5.3.1 -->
+	  <!-- You have to specify soa531.url property -->
+	  <profile>
+	    <id>soa531</id>
+	    <properties>
+	      <soa.version>soa531</soa.version>
+	      <esb.version>4.11</esb.version>
+	      <swtbot.properties>${requirementsDirectory}/${soa.version}.properties</swtbot.properties>
+	      <swtbot.test.properties.file>${swtbot.properties}</swtbot.test.properties.file>
+	    </properties>
+	    <build>
+	      <plugins>
+		<plugin>
+		  <groupId>com.googlecode.maven-download-plugin</groupId>
+		  <artifactId>maven-download-plugin</artifactId>
+		  <version>1.1.0</version>
+		  <executions>
+		    <execution>
+		      <id>get-soa</id>
+		      <phase>pre-integration-test</phase>
+		      <goals>
+			<goal>wget</goal>
+		      </goals>
+		      <configuration>
+			<url>${soa531.url}</url>
+			<unpack>true</unpack>
+			<outputDirectory>${requirementsDirectory}</outputDirectory>
+		      </configuration>
+		    </execution>
+		  </executions>
+		</plugin>
+		<plugin>
+		  <artifactId>maven-antrun-plugin</artifactId>
+		  <version>1.7</version>
+		  <executions>
+		    <execution>
+		      <id>set-soa-user</id>
+		      <phase>pre-integration-test</phase>
+		      <goals>
+			<goal>run</goal>
+		      </goals>
+		      <configuration>
+			<target>
+			  <echo file="${requirementsDirectory}/jboss-soa-p-5/jboss-as/server/default/conf/props/soa-users.properties">admin=admin</echo>
+			  <echo file="${swtbot.properties}">SERVER=SOA,5.3,default,${requirementsDirectory}/jboss-soa-p-5/jboss-as${line.separator}ESB=${esb.version},${requirementsDirectory}/jboss-soa-p-5</echo>
+			</target>
 		      </configuration>
 		    </execution>
 		  </executions>
