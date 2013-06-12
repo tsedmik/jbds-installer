@@ -6,7 +6,7 @@
 	  <artifactId>parent</artifactId>
 	  <version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>jbds-7.0.0.Beta1</artifactId>
+	<artifactId>jbds-7.0.0.Beta1a</artifactId>
 	<packaging>pom</packaging>
 
 	<build>
@@ -22,7 +22,7 @@
 		    <goal>install</goal>
 		  </goals>
 		  <configuration>
-		    <jbds.installer>${jbds-700beta1.installer}</jbds.installer>
+		    <jbds.installer>${jbds-700beta1a.installer}</jbds.installer>
 		  </configuration>
 		</execution>
 	      </executions>
