@@ -40,9 +40,15 @@
 	  <eclipse-indigo.site>http://download.eclipse.org/releases/indigo</eclipse-indigo.site>
 	  <eclipse-juno.site>http://download.eclipse.org/releases/juno</eclipse-juno.site>
 	  <!-- SOA Platform -->
+	  <soa520.url>http://10.34.32.168/released/soa-5.2.0.GA/soa-p-5.2.0.GA.zip</soa520.url>
+	  <eds520.url>http://10.34.32.168/released/soa-5.2.0.GA/eds-p-5.2.0.GA.zip</eds520.url>
+	  <soa530.url>http://10.34.32.168/released/soa-5.3.0.GA/soa-p-5.3.0.GA.zip</soa530.url>
+	  <eds530.url>http://10.34.32.168/released/soa-5.3.0.GA/eds-p-5.3.0.GA.zip</eds530.url>
 	  <soa531.url>http://10.34.32.168/released/soa-5.3.1.GA/soa-p-5.3.1.GA.zip</soa531.url>
+	  <eds531.url>http://10.34.32.168/released/soa-5.3.1.GA/eds-p-5.3.1.GA.zip</eds531.url>
 	  <!-- Other Properties -->
 	  <requirementsDirectory>${project.build.directory}/requirements</requirementsDirectory>
+	  <swtbot.properties>${requirementsDirectory}/swtbot.properties</swtbot.properties>
 	</properties>
 
 	<repositories>
@@ -114,7 +120,6 @@
 	    <properties>
 	      <soa.version>soa520</soa.version>
 	      <esb.version>4.10</esb.version>
-	      <swtbot.properties>${requirementsDirectory}/${soa.version}.properties</swtbot.properties>
 	      <swtbot.test.properties.file>${swtbot.properties}</swtbot.test.properties.file>
 	    </properties>
 	    <build>
@@ -151,7 +156,7 @@
 		      <configuration>
 			<target>
 			  <echo file="${requirementsDirectory}/jboss-soa-p-5/jboss-as/server/default/conf/props/soa-users.properties">admin=admin</echo>
-			  <echo file="${swtbot.properties}">SERVER=SOA,5.2,default,${requirementsDirectory}/jboss-soa-p-5/jboss-as${line.separator}ESB=${esb.version},${requirementsDirectory}/jboss-soa-p-5</echo>
+			  <echo file="${swtbot.properties}">SERVER=SOA,5.2,default,${requirementsDirectory}/jboss-soa-p-5/jboss-as${line.separator}ESB=${esb.version},${requirementsDirectory}/jboss-soa-p-5${line.separator}JBPM=3.2.13,${requirementsDirectory}/jboss-soa-p-5/jbpm-jpdl</echo>
 			</target>
 		      </configuration>
 		    </execution>
@@ -167,7 +172,6 @@
 	    <properties>
 	      <soa.version>soa530</soa.version>
 	      <esb.version>4.11</esb.version>
-	      <swtbot.properties>${requirementsDirectory}/${soa.version}.properties</swtbot.properties>
 	      <swtbot.test.properties.file>${swtbot.properties}</swtbot.test.properties.file>
 	    </properties>
 	    <build>
@@ -204,7 +208,7 @@
 		      <configuration>
 			<target>
 			  <echo file="${requirementsDirectory}/jboss-soa-p-5/jboss-as/server/default/conf/props/soa-users.properties">admin=admin</echo>
-			  <echo file="${swtbot.properties}">SERVER=SOA,5.3,default,${requirementsDirectory}/jboss-soa-p-5/jboss-as${line.separator}ESB=${esb.version},${requirementsDirectory}/jboss-soa-p-5</echo>
+			  <echo file="${swtbot.properties}">SERVER=SOA,5.3,default,${requirementsDirectory}/jboss-soa-p-5/jboss-as${line.separator}ESB=${esb.version},${requirementsDirectory}/jboss-soa-p-5${line.separator}JBPM=3.2.13,${requirementsDirectory}/jboss-soa-p-5/jbpm-jpdl</echo>
 			</target>
 		      </configuration>
 		    </execution>
@@ -220,7 +224,6 @@
 	    <properties>
 	      <soa.version>soa531</soa.version>
 	      <esb.version>4.11</esb.version>
-	      <swtbot.properties>${requirementsDirectory}/${soa.version}.properties</swtbot.properties>
 	      <swtbot.test.properties.file>${swtbot.properties}</swtbot.test.properties.file>
 	    </properties>
 	    <build>
@@ -257,7 +260,244 @@
 		      <configuration>
 			<target>
 			  <echo file="${requirementsDirectory}/jboss-soa-p-5/jboss-as/server/default/conf/props/soa-users.properties">admin=admin</echo>
-			  <echo file="${swtbot.properties}">SERVER=SOA,5.3,default,${requirementsDirectory}/jboss-soa-p-5/jboss-as${line.separator}ESB=${esb.version},${requirementsDirectory}/jboss-soa-p-5</echo>
+			  <echo file="${swtbot.properties}">SERVER=SOA,5.3,default,${requirementsDirectory}/jboss-soa-p-5/jboss-as${line.separator}ESB=${esb.version},${requirementsDirectory}/jboss-soa-p-5${line.separator}JBPM=3.2.13,${requirementsDirectory}/jboss-soa-p-5/jbpm-jpdl</echo>
+			</target>
+		      </configuration>
+		    </execution>
+		  </executions>
+		</plugin>
+	      </plugins>
+	    </build>
+	  </profile>
+	  <!-- Install EDS 5.2.0 -->
+	  <!-- You have to specify soa520.url and eds520.url property -->
+	  <profile>
+	    <id>eds520</id>
+	    <properties>
+	      <soa.version>soa520</soa.version>
+	      <esb.version>4.10</esb.version>
+	      <swtbot.test.properties.file>${swtbot.properties}</swtbot.test.properties.file>
+	    </properties>
+	    <build>
+	      <plugins>
+		<plugin>
+		  <groupId>com.googlecode.maven-download-plugin</groupId>
+		  <artifactId>maven-download-plugin</artifactId>
+		  <version>1.1.0</version>
+		  <executions>
+		    <execution>
+		      <id>get-soa</id>
+		      <phase>pre-integration-test</phase>
+		      <goals>
+			<goal>wget</goal>
+		      </goals>
+		      <configuration>
+			<url>${soa520.url}</url>
+			<unpack>true</unpack>
+			<outputDirectory>${requirementsDirectory}</outputDirectory>
+		      </configuration>
+		    </execution>
+		    <execution>
+		      <id>get-eds</id>
+		      <phase>pre-integration-test</phase>
+		      <goals>
+			<goal>wget</goal>
+		      </goals>
+		      <configuration>
+			<url>${eds520.url}</url>
+			<unpack>true</unpack>
+			<outputDirectory>${requirementsDirectory}/jboss-soa-p-5</outputDirectory>
+		      </configuration>
+		    </execution>
+		  </executions>
+		</plugin>
+		<plugin>
+		  <artifactId>maven-antrun-plugin</artifactId>
+		  <version>1.7</version>
+		  <executions>
+		      <execution>
+			<id>install-eds</id>
+			<phase>pre-integration-test</phase>
+			<goals>
+			  <goal>run</goal>
+			</goals>
+			<configuration>
+			  <target>
+			    <ant dir="${requirementsDirectory}/jboss-soa-p-5/eds" useNativeBasedir="true">
+			      <property name="profile" value="default" />
+			    </ant>
+			  </target>
+			</configuration>
+		      </execution>
+		    <execution>
+		      <id>set-soa-user</id>
+		      <phase>pre-integration-test</phase>
+		      <goals>
+			<goal>run</goal>
+		      </goals>
+		      <configuration>
+			<target>
+			  <echo file="${requirementsDirectory}/jboss-soa-p-5/jboss-as/server/default/conf/props/soa-users.properties">admin=admin</echo>
+			  <echo file="${requirementsDirectory}/jboss-soa-p-5/jboss-as/server/default/conf/props/teiid-security-users.properties">user=user</echo>
+			  <echo file="${swtbot.properties}">SERVER=SOA,5.2,default,${requirementsDirectory}/jboss-soa-p-5/jboss-as${line.separator}ESB=${esb.version},${requirementsDirectory}/jboss-soa-p-5${line.separator}MODESHAPE=eds</echo>
+			</target>
+		      </configuration>
+		    </execution>
+		  </executions>
+		</plugin>
+	      </plugins>
+	    </build>
+	  </profile>
+	  <!-- Install EDS 5.3.0 -->
+	  <!-- You have to specify soa530.url and eds530.url property -->
+	  <profile>
+	    <id>eds530</id>
+	    <properties>
+	      <soa.version>soa530</soa.version>
+	      <esb.version>4.11</esb.version>
+	      <swtbot.test.properties.file>${swtbot.properties}</swtbot.test.properties.file>
+	    </properties>
+	    <build>
+	      <plugins>
+		<plugin>
+		  <groupId>com.googlecode.maven-download-plugin</groupId>
+		  <artifactId>maven-download-plugin</artifactId>
+		  <version>1.1.0</version>
+		  <executions>
+		    <execution>
+		      <id>get-soa</id>
+		      <phase>pre-integration-test</phase>
+		      <goals>
+			<goal>wget</goal>
+		      </goals>
+		      <configuration>
+			<url>${soa530.url}</url>
+			<unpack>true</unpack>
+			<outputDirectory>${requirementsDirectory}</outputDirectory>
+		      </configuration>
+		    </execution>
+		    <execution>
+		      <id>get-eds</id>
+		      <phase>pre-integration-test</phase>
+		      <goals>
+			<goal>wget</goal>
+		      </goals>
+		      <configuration>
+			<url>${eds530.url}</url>
+			<unpack>true</unpack>
+			<outputDirectory>${requirementsDirectory}/jboss-soa-p-5</outputDirectory>
+		      </configuration>
+		    </execution>
+		  </executions>
+		</plugin>
+		<plugin>
+		  <artifactId>maven-antrun-plugin</artifactId>
+		  <version>1.7</version>
+		  <executions>
+		      <execution>
+			<id>install-eds</id>
+			<phase>pre-integration-test</phase>
+			<goals>
+			  <goal>run</goal>
+			</goals>
+			<configuration>
+			  <target>
+			    <ant dir="${requirementsDirectory}/jboss-soa-p-5/eds" useNativeBasedir="true">
+			      <property name="profile" value="default" />
+			    </ant>
+			  </target>
+			</configuration>
+		      </execution>
+		    <execution>
+		      <id>set-soa-user</id>
+		      <phase>pre-integration-test</phase>
+		      <goals>
+			<goal>run</goal>
+		      </goals>
+		      <configuration>
+			<target>
+			  <echo file="${requirementsDirectory}/jboss-soa-p-5/jboss-as/server/default/conf/props/soa-users.properties">admin=admin</echo>
+			  <echo file="${requirementsDirectory}/jboss-soa-p-5/jboss-as/server/default/conf/props/teiid-security-users.properties">user=user</echo>
+			  <echo file="${swtbot.properties}">SERVER=SOA,5.3,default,${requirementsDirectory}/jboss-soa-p-5/jboss-as${line.separator}ESB=${esb.version},${requirementsDirectory}/jboss-soa-p-5${line.separator}MODESHAPE=eds</echo>
+			</target>
+		      </configuration>
+		    </execution>
+		  </executions>
+		</plugin>
+	      </plugins>
+	    </build>
+	  </profile>
+	  <!-- Install EDS 5.3.1 -->
+	  <!-- You have to specify soa531.url property -->
+	  <profile>
+	    <id>eds531</id>
+	    <properties>
+	      <soa.version>soa531</soa.version>
+	      <esb.version>4.11</esb.version>
+	      <swtbot.test.properties.file>${swtbot.properties}</swtbot.test.properties.file>
+	    </properties>
+	    <build>
+	      <plugins>
+		<plugin>
+		  <groupId>com.googlecode.maven-download-plugin</groupId>
+		  <artifactId>maven-download-plugin</artifactId>
+		  <version>1.1.0</version>
+		  <executions>
+		    <execution>
+		      <id>get-soa</id>
+		      <phase>pre-integration-test</phase>
+		      <goals>
+			<goal>wget</goal>
+		      </goals>
+		      <configuration>
+			<url>${soa531.url}</url>
+			<unpack>true</unpack>
+			<outputDirectory>${requirementsDirectory}</outputDirectory>
+		      </configuration>
+		    </execution>
+		    <execution>
+		      <id>get-eds</id>
+		      <phase>pre-integration-test</phase>
+		      <goals>
+			<goal>wget</goal>
+		      </goals>
+		      <configuration>
+			<url>${eds531.url}</url>
+			<unpack>true</unpack>
+			<outputDirectory>${requirementsDirectory}/jboss-soa-p-5</outputDirectory>
+		      </configuration>
+		    </execution>
+		  </executions>
+		</plugin>
+		<plugin>
+		  <artifactId>maven-antrun-plugin</artifactId>
+		  <version>1.7</version>
+		  <executions>
+		      <execution>
+			<id>install-eds</id>
+			<phase>pre-integration-test</phase>
+			<goals>
+			  <goal>run</goal>
+			</goals>
+			<configuration>
+			  <target>
+			    <ant dir="${requirementsDirectory}/jboss-soa-p-5/eds" useNativeBasedir="true">
+			      <property name="profile" value="default" />
+			    </ant>
+			  </target>
+			</configuration>
+		      </execution>
+		    <execution>
+		      <id>set-soa-user</id>
+		      <phase>pre-integration-test</phase>
+		      <goals>
+			<goal>run</goal>
+		      </goals>
+		      <configuration>
+			<target>
+			  <echo file="${requirementsDirectory}/jboss-soa-p-5/jboss-as/server/default/conf/props/soa-users.properties">admin=admin</echo>
+			  <echo file="${requirementsDirectory}/jboss-soa-p-5/jboss-as/server/default/conf/props/teiid-security-users.properties">user=user</echo>
+			  <echo file="${swtbot.properties}">SERVER=SOA,5.3,default,${requirementsDirectory}/jboss-soa-p-5/jboss-as${line.separator}ESB=${esb.version},${requirementsDirectory}/jboss-soa-p-5${line.separator}MODESHAPE=eds</echo>
 			</target>
 		      </configuration>
 		    </execution>
