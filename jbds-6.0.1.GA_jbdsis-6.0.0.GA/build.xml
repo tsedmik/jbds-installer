@@ -18,6 +18,7 @@
     <echo>test.plugin=${test.plugin}</echo>
     <echo>test.suite=${test.class}</echo>
     <echo>specificJvmArgs=${specificJvmArgs}</echo>
+    <echo file="${target.dir}/password">master</echo>
     <java dir="." fork="true" classname="org.eclipse.core.launcher.Main" failonerror="true">
       <classpath>
 	<fileset dir="${eclipse.home}/plugins">
@@ -33,6 +34,7 @@
       <arg line="-data ${target.dir}/workspace" />
       <arg line="formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,${target.dir}/${test.class}.xml" />
       <arg line="formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter" />
+      <arg line="-eclipse.password ${target.dir}/password" />
       <arg line="-consoleLog -debug" />
       <syspropertyset>
 	<propertyref builtin="all" />
