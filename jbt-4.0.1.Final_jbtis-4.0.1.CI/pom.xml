@@ -79,6 +79,11 @@
 		<url>${reddeer-020.site}</url>
 		<layout>update-site</layout>
 	      </repository>
+	      <repository>
+		<id>tycho</id>
+		<url>http://repository.tesla.io:8081/nexus/content/sites/m2e.extras/m2eclipse-tycho/0.6.0/N/0.6.0.201207302152</url>
+		<layout>update-site</layout>
+	      </repository>
 	    </repositories>
 	    <build>
 	      <plugins>
@@ -96,6 +101,7 @@
 		      <param>org.eclipse.swtbot.generator.feature.feature.group</param>
 		      <param>org.eclipse.swtbot.ide.feature.group</param>
 		      <param>org.jboss.reddeer.feature.feature.group</param>
+		      <param>org.sonatype.tycho.m2e.feature.feature.group</param>
 		    </features>
 		  </configuration>
 		</plugin>
