@@ -512,13 +512,9 @@
 	  <module>jbds-5.0.2.GA_soa-5.0.4.GA</module>
 	  <module>jbds-6.0.1.GA</module>
 	  <module>jbds-6.0.1.GA_jbdsis-6.0.0.GA</module>
-	  <module>jbds-6.0.1.GA_jbtis-4.0.0.CI</module>
-	  <module>jbds-6.0.1.GA_jbtis-4.0.1.CI</module>
 	  <module>jbds-7.0.0.Beta2</module>
 	  <module>jbt-4.0.1.Final</module>
-	  <module>jbt-4.0.1.Final_jbtis-4.0.0.CI</module>
 	  <module>jbt-4.0.1.Final_jbtis-4.0.1.CI</module>
-	  <module>jbt-4.0.1.Final_teiid-8.1.0.Final</module>
 	  <module>jbt-4.1.0.Beta2</module>
 	</modules>
 
