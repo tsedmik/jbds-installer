@@ -34,8 +34,7 @@
 	  <!-- JBoss Tools -->
 	  <jbt-juno.site>http://download.jboss.org/jbosstools/updates/stable/juno</jbt-juno.site>
 	  <jbt-401final.site>http://download.jboss.org/jbosstools/updates/stable/juno</jbt-401final.site>
-	  <jbt-410beta1a.site>http://download.jboss.org/jbosstools/updates/JBossTools-4.1.0.Beta1a.core</jbt-410beta1a.site>
-	  <jbt-410beta1b.site>http://download.jboss.org/jbosstools/updates/JBossTools-4.1.0.Beta1b.core</jbt-410beta1b.site>
+	  <jbt-410beta2.site>http://download.jboss.org/jbosstools/updates/JBossTools-4.1.0.Beta2.core</jbt-410beta2.site>
 	  <!-- Eclipse Update Sites -->
 	  <eclipse-indigo.site>http://download.eclipse.org/releases/indigo</eclipse-indigo.site>
 	  <eclipse-juno.site>http://download.eclipse.org/releases/juno</eclipse-juno.site>
@@ -522,8 +521,7 @@
 	  <module>jbt-4.0.1.Final_jbtis-4.0.0.CI</module>
 	  <module>jbt-4.0.1.Final_teiid-8.1.0.Final</module>
 	  <module>jbt-4.0.1.Final_switchyard-0.8.0.Final</module>
-	  <module>jbt-4.1.0.Beta1a</module>
-	  <module>jbt-4.1.0.Beta1b</module>
+	  <module>jbt-4.1.0.Beta2</module>
 	</modules>
 
 </project>

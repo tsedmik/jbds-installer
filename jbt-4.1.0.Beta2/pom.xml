@@ -6,13 +6,13 @@
 	  <artifactId>parent</artifactId>
 	  <version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>jbt-4.1.0.Beta1a</artifactId>
+	<artifactId>jbt-4.1.0.Beta2</artifactId>
 	<packaging>pom</packaging>
 	
 	<repositories>
 	  <repository>
 	    <id>jbt</id>
-	    <url>${jbt-410beta1a.site}</url>
+	    <url>${jbt-410beta2.site}</url>
 	    <layout>update-site</layout>
 	  </repository>
 	</repositories>
@@ -30,7 +30,7 @@
 		    <goal>install</goal>
 		  </goals>
 		  <configuration>
-		    <eclipse.version>jee-kepler-RC1</eclipse.version>
+		    <eclipse.version>jee-kepler-RC3</eclipse.version>
 		    <features combine.children="append">
 		      <param>org.jboss.ide.eclipse.as.feature.feature.group</param>
 		    </features>
@@ -55,11 +55,6 @@
 		<url>${reddeer-master.site}</url>
 		<layout>update-site</layout>
 	      </repository>
-	      <repository>
-		<id>tests</id>
-		<url>${tests-juno.site}</url>
-		<layout>update-site</layout>
-	      </repository>
 	    </repositories>
 	    <build>
 	      <plugins>
@@ -77,7 +72,6 @@
 		      <param>org.eclipse.swtbot.generator.feature.feature.group</param>
 		      <param>org.eclipse.swtbot.ide.feature.group</param>
 		      <param>org.jboss.reddeer.feature.feature.group</param>
-		      <param>org.jboss.tools.test.feature.feature.group</param>
 		    </features>
 		  </configuration>
 		</plugin>
