@@ -29,6 +29,7 @@
 	  <jbtis-401ci.site>http://download.jboss.org/jbosstools/updates/integration/juno/integration-stack/aggregate/4.0.1</jbtis-401ci.site>
 	  <!-- JBDSIS -->
 	  <jbdsis-600ga.site>http://www.qa.jboss.com/binaries/RHDS/builds/staging/jbdsis-6.0.0-updatesite</jbdsis-600ga.site>
+	  <jbdsis-700ga.site>http://www.qa.jboss.com/binaries/RHDS/builds/staging/jbdsis-7.0.0-updatesite</jbdsis-700ga.site>
 	  <!-- JBDS Plugin -->
 	  <jbds.plugin.version>0.0.2-SNAPSHOT</jbds.plugin.version>
 	  <!-- JBoss Tools -->
@@ -513,6 +514,7 @@
 	  <module>jbds-6.0.1.GA</module>
 	  <module>jbds-6.0.1.GA_jbdsis-6.0.0.GA</module>
 	  <module>jbds-7.0.0.Beta2</module>
+	  <module>jbds-7.0.0.Beta2_jbdsis-7.0.0.GA</module>
 	  <module>jbt-4.0.1.Final</module>
 	  <module>jbt-4.0.1.Final_jbtis-4.0.1.CI</module>
 	  <module>jbt-4.1.0.Beta2</module>
