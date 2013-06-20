@@ -90,7 +90,7 @@
 
 	<profiles>
 	  <profile>
-	    <id>test</id>
+	    <id>install-test</id>
 	    <build>
 	      <plugins>
 		<plugin>
@@ -105,7 +105,7 @@
 			<goal>wget</goal>
 		      </goals>
 		      <configuration>
-			<url>https://repository.jboss.org/nexus/content/groups/public/org/jboss/tools/installation-tests/scripts/4.1.0.Alpha1-SNAPSHOT/scripts-4.1.0.Alpha1-20130304.132450-33-delivery.zip</url>
+			<url>https://repository.jboss.org/nexus/content/groups/public/org/jboss/tools/installation-tests/scripts/4.1.0.Beta1-SNAPSHOT/scripts-4.1.0.Beta1-20130611.123145-10-delivery.zip</url>
 			<unpack>true</unpack>
 		      </configuration>
 		    </execution>
