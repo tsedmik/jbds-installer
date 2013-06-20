@@ -507,19 +507,30 @@
 	      </plugins>
 	    </build>
 	  </profile>
+	  <profile>
+	    <id>jbds-6.0.1.GA_jbdsis-6.0.0.GA</id>
+	    <modules>
+	      <module>jbds-6.0.1.GA_jbdsis-6.0.0.GA</module>
+	    </modules>
+	  </profile>
+	  <profile>
+	    <id>jbds-7.0.0.Beta2_jbdsis-7.0.0.GA</id>
+	    <modules>
+	      <module>jbds-7.0.0.Beta2_jbdsis-7.0.0.GA</module>
+	    </modules>
+	  </profile>
+	  <profile>
+	    <id>jbt-4.0.1.Final_jbtis-4.0.1.CI</id>
+	    <modules>
+	      <module>jbt-4.0.1.Final_jbtis-4.0.1.CI</module>
+	    </modules>
+	  </profile>
+	  <profile>
+	    <id>jbt-4.1.0.Beta2_jbtis-4.1.0.CI</id>
+	    <modules>
+	      <module>jbt-4.1.0.Beta2_jbtis-4.1.0.CI</module>
+	    </modules>
+	  </profile>
 	</profiles>
-
-	<modules>
-	  <module>jbds-5.0.2.GA</module>
-	  <module>jbds-5.0.2.GA_soa-5.0.4.GA</module>
-	  <module>jbds-6.0.1.GA</module>
-	  <module>jbds-6.0.1.GA_jbdsis-6.0.0.GA</module>
-	  <module>jbds-7.0.0.Beta2</module>
-	  <module>jbds-7.0.0.Beta2_jbdsis-7.0.0.GA</module>
-	  <module>jbt-4.0.1.Final</module>
-	  <module>jbt-4.0.1.Final_jbtis-4.0.1.CI</module>
-	  <module>jbt-4.1.0.Beta2</module>
-	  <module>jbt-4.1.0.Beta2_jbtis-4.1.0.CI</module>
-	</modules>
 
 </project>
