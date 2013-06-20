@@ -41,43 +41,4 @@
 	  </plugins>
 	</build>
 
-	<profiles>
-	  <profile>
-	    <id>qa</id>
-	    <repositories>
-	      <repository>
-		<id>swtbot</id>
-		<url>${swtbot-juno.site}</url>
-		<layout>update-site</layout>
-	      </repository>
-	      <repository>
-		<id>reddeer</id>
-		<url>${reddeer-master.site}</url>
-		<layout>update-site</layout>
-	      </repository>
-	    </repositories>
-	    <build>
-	      <plugins>
-		<plugin>
-		  <groupId>org.jboss.apodhrad</groupId>
-		  <artifactId>jbds-plugin</artifactId>
-		  <version>${jbds.plugin.version}</version>
-		  <configuration>
-		    <features>
-		      <param>org.eclipse.swtbot.eclipse.feature.group</param>
-		      <param>org.eclipse.swtbot.eclipse.gef.feature.group</param>
-		      <param>org.eclipse.swtbot.eclipse.test.junit.feature.group</param>
-		      <param>org.eclipse.swtbot.feature.group</param>
-		      <param>org.eclipse.swtbot.forms.feature.group</param>
-		      <param>org.eclipse.swtbot.generator.feature.feature.group</param>
-		      <param>org.eclipse.swtbot.ide.feature.group</param>
-		      <param>org.jboss.reddeer.feature.feature.group</param>
-		    </features>
-		  </configuration>
-		</plugin>
-	      </plugins>
-	    </build>
-	  </profile>
-	</profiles>
-
 </project>
