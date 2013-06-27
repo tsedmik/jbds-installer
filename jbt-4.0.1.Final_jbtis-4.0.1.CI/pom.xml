@@ -103,6 +103,7 @@
 		      <param>org.eclipse.swtbot.generator.feature.feature.group</param>
 		      <param>org.eclipse.swtbot.ide.feature.group</param>
 		      <param>org.jboss.reddeer.feature.feature.group</param>
+		      <param>org.jboss.reddeer.feature.source.feature.group</param>
 		      <param>org.sonatype.tycho.m2e.feature.feature.group</param>
 		    </features>
 		  </configuration>
