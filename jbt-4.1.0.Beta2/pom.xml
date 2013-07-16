@@ -30,7 +30,7 @@
 		    <goal>install</goal>
 		  </goals>
 		  <configuration>
-		    <eclipse.version>jee-kepler-RC3</eclipse.version>
+		    <eclipse.version>jee-kepler-R</eclipse.version>
 		    <features combine.children="append">
 		      <param>org.jboss.ide.eclipse.as.feature.feature.group</param>
 		    </features>
