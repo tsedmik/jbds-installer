@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!-- author lzoubek@redhat.com -->
+<!-- author apodhrad@redhat.com -->
+<project name="SWTBot Test Runner"  default="run">
+  <property name="target.dir" value="target" />
+  <property name="eclipse.home" value="${target.dir}/jbdevstudio/studio" />
+  <property name="test.plugin" value="org.jboss.tools.bpel.ui.bot.test" />
+  <property name="test.class" value="org.jboss.tools.bpel.ui.bot.test.suite.AllTests" />
+  <property name="usage_reporting_enabled" value="false"/>
+
+  <condition property="specificJvmArgs" value="-XstartOnFirstThread" else="">
+      <os family="mac" />
+  </condition>
+  
+  <target name="run">
+    <echo>Running SWTBot test</echo>
+    <echo>eclipse.home=${eclipse.home}</echo>
+    <echo>test.plugin=${test.plugin}</echo>
+    <echo>test.suite=${test.class}</echo>
+    <echo>specificJvmArgs=${specificJvmArgs}</echo>
+    <echo file="${target.dir}/password">master</echo>
+    <java dir="." fork="true" classname="org.eclipse.core.launcher.Main" failonerror="true">
+      <classpath>
+	<fileset dir="${eclipse.home}/plugins">
+	  <include name="org.eclipse.equinox.launcher_*.jar" />
+	</fileset>
+      </classpath>
+      <jvmarg line="-Xms256M -Xmx768M -XX:MaxPermSize=512M -Dusage_reporting_enabled=false -Dorg.eclipse.swtbot.search.timeout=30000 ${specificJvmArgs}" />
+      <!--  -Dorg.eclipse.equinox.p2.reconciler.dropins.directory=/home/apodhrad/tycho/target/dropins -->
+      <arg line="-application org.eclipse.swtbot.eclipse.junit.headless.swtbottestapplication" />
+      <arg line="-product com.jboss.jbds.product.product" />
+      <arg line="-testApplication ${test.plugin}" />
+      <arg line="-testPluginName ${test.plugin}" />
+      <arg line="-className ${test.class}" />
+      <arg line="-data ${target.dir}/workspace" />
+      <arg line="formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,${target.dir}/${test.class}.xml" />
+      <arg line="formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter" />
+      <arg line="-eclipse.password ${target.dir}/password" />
+      <arg line="-consoleLog -debug" />
+      <syspropertyset>
+	<propertyref builtin="all" />
+      </syspropertyset>
+    </java>
+  </target>
+</project>

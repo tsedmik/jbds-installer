@@ -26,6 +26,7 @@
 	  <!-- SWT Bot Ext -->
 	  <tests-indigo.site>http://download.jboss.org/jbosstools/updates/nightly/coretests/3.3.indigo</tests-indigo.site>
 	  <tests-juno.site>http://download.jboss.org/jbosstools/updates/nightly/coretests/4.0.juno</tests-juno.site>
+	  <tests-kepler.site>http://download.jboss.org/jbosstools/updates/nightly/coretests/4.1.kepler</tests-kepler.site>
 	  <!-- JBTIS -->
 	  <jbtis-400ci.site>http://download.jboss.org/jbosstools/updates/integration/juno/integration-stack/aggregate/4.0.0</jbtis-400ci.site>
 	  <jbtis-401ci.site>http://download.jboss.org/jbosstools/updates/integration/juno/integration-stack/aggregate/4.0.1</jbtis-401ci.site>
