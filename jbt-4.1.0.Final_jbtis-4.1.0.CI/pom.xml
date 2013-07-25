@@ -6,13 +6,13 @@
 	  <artifactId>parent</artifactId>
 	  <version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>jbt-4.1.0.Beta2_jbtis-4.1.0.CI</artifactId>
+	<artifactId>jbt-4.1.0.Final_jbtis-4.1.0.CI</artifactId>
 	<packaging>pom</packaging>
 	
 	<repositories>
 	  <repository>
 	    <id>jbt</id>
-	    <url>${jbt-410beta2.site}</url>
+	    <url>${jbt-410final.site}</url>
 	    <layout>update-site</layout>
 	  </repository>
 	  <repository>

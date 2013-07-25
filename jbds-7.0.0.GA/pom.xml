@@ -6,16 +6,8 @@
 	  <artifactId>parent</artifactId>
 	  <version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>jbt-4.1.0.Beta2</artifactId>
+	<artifactId>jbds-7.0.0.ga</artifactId>
 	<packaging>pom</packaging>
-	
-	<repositories>
-	  <repository>
-	    <id>jbt</id>
-	    <url>${jbt-410beta2.site}</url>
-	    <layout>update-site</layout>
-	  </repository>
-	</repositories>
 
 	<build>
 	  <plugins>
@@ -25,15 +17,12 @@
 	      <version>${jbds.plugin.version}</version>
 	      <executions>
 		<execution>
-		  <id>jbt</id>
+		  <id>jbds</id>
 		  <goals>
 		    <goal>install</goal>
 		  </goals>
 		  <configuration>
-		    <eclipse.version>jee-kepler-R</eclipse.version>
-		    <features combine.children="append">
-		      <param>org.jboss.ide.eclipse.as.feature.feature.group</param>
-		    </features>
+		    <jbds.installer>${jbds-700ga.installer}</jbds.installer>
 		  </configuration>
 		</execution>
 	      </executions>

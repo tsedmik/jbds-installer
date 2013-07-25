@@ -6,6 +6,7 @@
   <property name="eclipse.home" value="${target.dir}/jbdevstudio/studio" />
   <property name="test.plugin" value="org.jboss.tools.bpel.ui.bot.test" />
   <property name="test.class" value="org.jboss.tools.bpel.ui.bot.test.suite.AllTests" />
+  <property name="test.workspace" value="${target.dir}/workspace" />
   <property name="usage_reporting_enabled" value="false"/>
 
   <condition property="specificJvmArgs" value="-XstartOnFirstThread" else="">
@@ -19,6 +20,7 @@
     <echo>test.suite=${test.class}</echo>
     <echo>specificJvmArgs=${specificJvmArgs}</echo>
     <echo file="${target.dir}/password">master</echo>
+    <delete dir="${test.workspace}" />
     <java dir="." fork="true" classname="org.eclipse.core.launcher.Main" failonerror="true">
       <classpath>
 	<fileset dir="${eclipse.home}/plugins">
@@ -32,7 +34,7 @@
       <arg line="-testApplication ${test.plugin}" />
       <arg line="-testPluginName ${test.plugin}" />
       <arg line="-className ${test.class}" />
-      <arg line="-data ${target.dir}/workspace" />
+      <arg line="-data ${test.workspace}" />
       <arg line="formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,${target.dir}/${test.class}.xml" />
       <arg line="formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter" />
       <arg line="-eclipse.password ${target.dir}/password" />

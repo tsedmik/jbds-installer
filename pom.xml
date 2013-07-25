@@ -10,8 +10,7 @@
 	  <!-- JBDS Installer -->
 	  <jbds-502ga.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/5.0.2.GA.installer/jbdevstudio-product-universal-5.0.2.v20130119-0035-H249-GA.jar</jbds-502ga.installer>
 	  <jbds-601ga.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/6.0.1.GA.installer/jbdevstudio-product-universal-6.0.1.GA-v20130327-2052-B361.jar</jbds-601ga.installer>
-	  <jbds-700beta2.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/7.0.0.Beta2.installer/jbdevstudio-product-universal-7.0.0.Beta2-v20130626-0242-B345.jar</jbds-700beta2.installer>
-	  <jbds-700cr1.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/7.0.0.CR1a.installer/jbdevstudio-product-universal-7.0.0.CR1-v20130706-1410-B357.jar</jbds-700cr1.installer>
+	  <jbds-700ga.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/7.0.0.GA.installer/jbdevstudio-product-universal-7.0.0.GA-v20130720-0044-B364.jar</jbds-700ga.installer>
 	  <!-- SOA Tooling -->
 	  <soa-503ga.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/5.0.3.GA.soa-tooling</soa-503ga.site>
 	  <soa-504ga.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/5.0.4.GA.soa-tooling</soa-504ga.site>
@@ -39,7 +38,7 @@
 	  <!-- JBoss Tools -->
 	  <jbt-juno.site>http://download.jboss.org/jbosstools/updates/stable/juno</jbt-juno.site>
 	  <jbt-401final.site>http://download.jboss.org/jbosstools/updates/stable/juno</jbt-401final.site>
-	  <jbt-410beta2.site>http://download.jboss.org/jbosstools/updates/JBossTools-4.1.0.Beta2.core</jbt-410beta2.site>
+	  <jbt-410final.site>http://download.jboss.org/jbosstools/updates/stable/kepler</jbt-410final.site>
 	  <!-- Eclipse Update Sites -->
 	  <eclipse-indigo.site>http://download.eclipse.org/releases/indigo</eclipse-indigo.site>
 	  <eclipse-juno.site>http://download.eclipse.org/releases/juno</eclipse-juno.site>
@@ -517,9 +516,9 @@
 	    </modules>
 	  </profile>
 	  <profile>
-	    <id>jbds-7.0.0.Beta2_jbdsis-7.0.0.GA</id>
+	    <id>jbds-7.0.0.GA_jbdsis-7.0.0.GA</id>
 	    <modules>
-	      <module>jbds-7.0.0.Beta2_jbdsis-7.0.0.GA</module>
+	      <module>jbds-7.0.0.GA_jbdsis-7.0.0.GA</module>
 	    </modules>
 	  </profile>
 	  <profile>
@@ -529,9 +528,9 @@
 	    </modules>
 	  </profile>
 	  <profile>
-	    <id>jbt-4.1.0.Beta2_jbtis-4.1.0.CI</id>
+	    <id>jbt-4.1.0.Final_jbtis-4.1.0.CI</id>
 	    <modules>
-	      <module>jbt-4.1.0.Beta2_jbtis-4.1.0.CI</module>
+	      <module>jbt-4.1.0.Final_jbtis-4.1.0.CI</module>
 	    </modules>
 	  </profile>
 	</profiles>
