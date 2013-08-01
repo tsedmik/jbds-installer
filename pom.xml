@@ -33,6 +33,7 @@
 	  <!-- JBDSIS -->
 	  <jbdsis-600ga.site>http://www.qa.jboss.com/binaries/RHDS/builds/staging/jbdsis-6.0.0-updatesite</jbdsis-600ga.site>
 	  <jbdsis-700ga.site>http://www.qa.jboss.com/binaries/RHDS/builds/staging/jbdsis-7.0.0-updatesite</jbdsis-700ga.site>
+	  <jbdsis-701ga.site>http://www.qa.jboss.com/binaries/RHDS/builds/staging/jbdsis-7.0.1-updatesite</jbdsis-701ga.site>
 	  <!-- JBDS Plugin -->
 	  <jbds.plugin.version>0.0.2-SNAPSHOT</jbds.plugin.version>
 	  <!-- JBoss Tools -->
