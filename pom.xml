@@ -30,6 +30,7 @@
 	  <jbtis-400ci.site>http://download.jboss.org/jbosstools/updates/integration/juno/integration-stack/aggregate/4.0.0</jbtis-400ci.site>
 	  <jbtis-401ci.site>http://download.jboss.org/jbosstools/updates/integration/juno/integration-stack/aggregate/4.0.1</jbtis-401ci.site>
 	  <jbtis-410ci.site>http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.0</jbtis-410ci.site>
+	  <jbtis-411ci.site>http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.1</jbtis-411ci.site>
 	  <!-- JBDSIS -->
 	  <jbdsis-600ga.site>http://www.qa.jboss.com/binaries/RHDS/builds/staging/jbdsis-6.0.0-updatesite</jbdsis-600ga.site>
 	  <jbdsis-700ga.site>http://www.qa.jboss.com/binaries/RHDS/builds/staging/jbdsis-7.0.0-updatesite</jbdsis-700ga.site>
@@ -523,6 +524,12 @@
 	    </modules>
 	  </profile>
 	  <profile>
+	    <id>jbds-7.0.0.GA_jbdsis-7.0.1.GA</id>
+	    <modules>
+	      <module>jbds-7.0.0.GA_jbdsis-7.0.1.GA</module>
+	    </modules>
+	  </profile>
+	  <profile>
 	    <id>jbt-4.0.1.Final_jbtis-4.0.1.CI</id>
 	    <modules>
 	      <module>jbt-4.0.1.Final_jbtis-4.0.1.CI</module>
@@ -532,6 +539,12 @@
 	    <id>jbt-4.1.0.Final_jbtis-4.1.0.CI</id>
 	    <modules>
 	      <module>jbt-4.1.0.Final_jbtis-4.1.0.CI</module>
+	    </modules>
+	  </profile>
+	  <profile>
+	    <id>jbt-4.1.0.Final_jbtis-4.1.1.CI</id>
+	    <modules>
+	      <module>jbt-4.1.0.Final_jbtis-4.1.1.CI</module>
 	    </modules>
 	  </profile>
 	</profiles>
