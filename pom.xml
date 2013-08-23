@@ -31,6 +31,7 @@
 	  <jbtis-401ci.site>http://download.jboss.org/jbosstools/updates/integration/juno/integration-stack/aggregate/4.0.1</jbtis-401ci.site>
 	  <jbtis-410ci.site>http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.0</jbtis-410ci.site>
 	  <jbtis-411ci.site>http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.1</jbtis-411ci.site>
+	  <jbtis-412ci.site>http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.2</jbtis-412ci.site>
 	  <!-- JBDSIS -->
 	  <jbdsis-600ga.site>http://www.qa.jboss.com/binaries/RHDS/builds/staging/jbdsis-6.0.0-updatesite</jbdsis-600ga.site>
 	  <jbdsis-700ga.site>http://www.qa.jboss.com/binaries/RHDS/builds/staging/jbdsis-7.0.0-updatesite</jbdsis-700ga.site>
