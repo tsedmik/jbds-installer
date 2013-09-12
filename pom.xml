@@ -54,6 +54,8 @@
 	  <eds530.url>http://10.34.32.168/released/soa-5.3.0.GA/eds-p-5.3.0.GA.zip</eds530.url>
 	  <soa531.url>http://10.34.32.168/released/soa-5.3.1.GA/soa-p-5.3.1.GA.zip</soa531.url>
 	  <eds531.url>http://10.34.32.168/released/soa-5.3.1.GA/eds-p-5.3.1.GA.zip</eds531.url>
+	  <!-- Fuse -->
+	  <fuse-720ci.site>http://download.jboss.org/jbosstools/updates/integration/kepler/soa-tooling/fuse-tooling/7.2.0/all/repo</fuse-720ci.site>
 	  <!-- Other Properties -->
 	  <requirementsDirectory>${project.build.directory}/requirements</requirementsDirectory>
 	  <swtbot.properties>${requirementsDirectory}/swtbot.properties</swtbot.properties>
