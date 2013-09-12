@@ -11,6 +11,7 @@
 	  <jbds-502ga.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/5.0.2.GA.installer/jbdevstudio-product-universal-5.0.2.v20130119-0035-H249-GA.jar</jbds-502ga.installer>
 	  <jbds-601ga.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/6.0.1.GA.installer/jbdevstudio-product-universal-6.0.1.GA-v20130327-2052-B361.jar</jbds-601ga.installer>
 	  <jbds-700ga.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/7.0.0.GA.installer/jbdevstudio-product-universal-7.0.0.GA-v20130720-0044-B364.jar</jbds-700ga.installer>
+	  <jbds-710alpha1.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/7.1.0.Alpha1.installer/jbdevstudio-product-universal-7.1.0.Alpha1-v20130909-0132-B378.jar</jbds-710alpha1.installer>
 	  <!-- SOA Tooling -->
 	  <soa-503ga.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/5.0.3.GA.soa-tooling</soa-503ga.site>
 	  <soa-504ga.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/5.0.4.GA.soa-tooling</soa-504ga.site>
@@ -36,6 +37,7 @@
 	  <jbdsis-600ga.site>http://www.qa.jboss.com/binaries/RHDS/builds/staging/jbdsis-6.0.0-updatesite</jbdsis-600ga.site>
 	  <jbdsis-700ga.site>http://www.qa.jboss.com/binaries/RHDS/builds/staging/jbdsis-7.0.0-updatesite</jbdsis-700ga.site>
 	  <jbdsis-701ga.site>http://www.qa.jboss.com/binaries/RHDS/builds/staging/jbdsis-7.0.1-updatesite</jbdsis-701ga.site>
+	  <jbdsis-700beta1.site>http://www.qa.jboss.com/binaries/RHDS/updates/integration/kepler/integration-stack/aggregate/7.0.0.Beta1</jbdsis-700beta1.site>
 	  <!-- JBDS Plugin -->
 	  <jbds.plugin.version>0.0.2-SNAPSHOT</jbds.plugin.version>
 	  <!-- JBoss Tools -->
