@@ -536,6 +536,18 @@
 	      <module>jbt-4.1.0.Final_jbtis-4.1.3.Beta3</module>
 	    </modules>
 	  </profile>
+	  <profile>
+	    <id>jbds-7.0.0.GA_jbdsis-7.0.0.Beta4</id>
+	    <modules>
+	      <module>jbds-7.0.0.GA_jbdsis-7.0.0.Beta4</module>
+	    </modules>
+	  </profile>
+	  <profile>
+	    <id>jbt-4.1.0.Final_jbtis-4.1.3.Beta4</id>
+	    <modules>
+	      <module>jbt-4.1.0.Final_jbtis-4.1.3.Beta4</module>
+	    </modules>
+	  </profile>
 	</profiles>
 
 </project>
