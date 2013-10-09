@@ -6,22 +6,22 @@
 	  <artifactId>parent</artifactId>
 	  <version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>jbt-4.1.0.Final_jbtis-4.1.Beta4</artifactId>
+	<artifactId>jbds-7.0.1.Alpha2_jbdsis-7.0.0.Beta4</artifactId>
 	<packaging>pom</packaging>
 	
 	<repositories>
 	  <repository>
-	    <id>jbt</id>
-	    <url>${jbt-410final.site}</url>
+	    <id>jbds</id>
+	    <url>${jbds-700ga.site}</url>
 	    <layout>update-site</layout>
 	  </repository>
 	  <repository>
-	    <id>jbtis</id>
-	    <url>${jbtis-413beta4.site}</url>
+	    <id>jbdsis</id>
+	    <url>${jbdsis-700beta4.site}</url>
 	    <layout>update-site</layout>
 	  </repository>
 	</repositories>
-
+	
 	<build>
 	  <plugins>
 	    <plugin>
@@ -30,14 +30,13 @@
 	      <version>${jbds.plugin.version}</version>
 	      <executions>
 		<execution>
-		  <id>jbt</id>
+		  <id>jbds</id>
 		  <goals>
 		    <goal>install</goal>
 		  </goals>
 		  <configuration>
-		    <eclipse.version>jee-kepler-R</eclipse.version>
+		    <jbds.installer>${jbds-710alpha2.installer}</jbds.installer>
 		    <features combine.children="append">
-		      <param>org.jboss.ide.eclipse.as.feature.feature.group</param>
 		      <param>org.eclipse.bpmn2.modeler.jboss.runtime.feature.feature.group</param>
 		      <param>org.jboss.tools.bpel.feature.feature.group</param>
 		      <param>org.jboss.tools.esb.feature.feature.group</param>
@@ -61,7 +60,6 @@
 		      <param>org.guvnor.tools.feature.feature.group</param>
 		      <param>org.jbpm.eclipse.feature.feature.group</param>
 		      <param>org.jbpm.eclipse.task.feature.feature.group</param>
-		      <param>org.savara.tools.feature.feature.group</param>
 		      <param>org.switchyard.tools.feature.feature.group</param>
 		      <param>org.switchyard.tools.bpel.feature.feature.group</param>
 		      <param>org.switchyard.tools.bpmn2.feature.feature.group</param>
