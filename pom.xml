@@ -15,6 +15,7 @@
 	  <jbds-701ga.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/7.0.1.GA.installer_NOT_RELEASED/jbdevstudio-product-universal-7.0.1.GA-v20130930-2238-B7.jar</jbds-701ga.installer>
 	  <jbds-710alpha1.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/7.1.0.Alpha1.installer/jbdevstudio-product-universal-7.1.0.Alpha1-v20130909-0132-B378.jar</jbds-710alpha1.installer>
 	  <jbds-710alpha2.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/7.1.0.Alpha2.installer/jbdevstudio-product-universal-7.1.0.Alpha2-v20131002-0939-B431.jar</jbds-710alpha2.installer>
+	  <jbds-710cr1.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/7.1.0.CR1a.installer/jbdevstudio-product-universal-7.1.0.CR1-v20131124-0717-B560.jar</jbds-710cr1.installer>
 	  <!-- SOA Tooling -->
 	  <soa-503ga.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/5.0.3.GA.soa-tooling</soa-503ga.site>
 	  <soa-504ga.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/5.0.4.GA.soa-tooling</soa-504ga.site>
@@ -39,6 +40,7 @@
 	  <jbtis-413beta2.site>http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.3.Beta2</jbtis-413beta2.site>
 	  <jbtis-413beta3.site>http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.3.Beta3</jbtis-413beta3.site>
 	  <jbtis-413beta4.site>http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.3.Beta4</jbtis-413beta4.site>
+	  <jbtis-413beta5.site>http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.3.Beta5</jbtis-413beta5.site>
 	  <!-- JBDS -->
 	  <jbds-700ga.site>https://devstudio.jboss.com/updates/7.0</jbds-700ga.site>
 	  <!-- JBDSIS -->
@@ -553,5 +555,9 @@
 	    </modules>
 	  </profile>
 	</profiles>
+
+	<modules>
+	  <module>jbds-7.1.0.CR1</module>
+	</modules>
 
 </project>
