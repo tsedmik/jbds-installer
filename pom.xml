@@ -559,7 +559,9 @@
 	</profiles>
 
 	<modules>
+	  <module>jbds-7.0.1.GA</module>
 	  <module>jbds-7.1.0.CR1</module>
+	  <module>jbds-7.1.0.CR2</module>
 	</modules>
 
 </project>
