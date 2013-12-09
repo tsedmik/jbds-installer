@@ -35,7 +35,7 @@
 		    <goal>install</goal>
 		  </goals>
 		  <configuration>
-		    <eclipse.version>jee-kepler-R</eclipse.version>
+		    <eclipse.version>jee-kepler-SR1</eclipse.version>
 		    <features combine.children="append">
 		      <param>org.jboss.ide.eclipse.as.feature.feature.group</param>
 		      <param>org.eclipse.bpmn2.modeler.jboss.runtime.feature.feature.group</param>

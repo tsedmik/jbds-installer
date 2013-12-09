@@ -22,7 +22,7 @@
 		    <goal>list</goal>
 		  </goals>
 		  <configuration>
-		    <eclipse.version>jee-kepler-R</eclipse.version>
+		    <eclipse.version>jee-kepler-SR1</eclipse.version>
 		  </configuration>
 		</execution>
 	      </executions>
