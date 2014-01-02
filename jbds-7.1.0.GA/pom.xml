@@ -6,7 +6,7 @@
 	  <artifactId>parent</artifactId>
 	  <version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>jbds-7.1.0.CR2</artifactId>
+	<artifactId>jbds-7.1.0.GA</artifactId>
 	<packaging>pom</packaging>
 
 	<build>
@@ -22,7 +22,7 @@
 		    <goal>install</goal>
 		  </goals>
 		  <configuration>
-		    <jbds.installer>${jbds-710cr2.installer}</jbds.installer>
+		    <jbds.installer>${jbds-710ga.installer}</jbds.installer>
 		  </configuration>
 		</execution>
 	      </executions>

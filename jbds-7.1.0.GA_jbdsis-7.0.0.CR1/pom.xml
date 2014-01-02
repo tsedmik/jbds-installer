@@ -6,9 +6,9 @@
 	  <artifactId>parent</artifactId>
 	  <version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>jbds-7.0.1.Alpha2_jbdsis-7.0.0.Beta4</artifactId>
+	<artifactId>jbds-7.1.0.GA_jbdsis-7.0.0.CR1</artifactId>
 	<packaging>pom</packaging>
-	
+
 	<repositories>
 	  <repository>
 	    <id>jbds</id>
@@ -17,11 +17,11 @@
 	  </repository>
 	  <repository>
 	    <id>jbdsis</id>
-	    <url>${jbdsis-700beta4.site}</url>
+	    <url>${jbdsis-700cr1.site}</url>
 	    <layout>update-site</layout>
 	  </repository>
 	</repositories>
-	
+
 	<build>
 	  <plugins>
 	    <plugin>
@@ -35,37 +35,34 @@
 		    <goal>install</goal>
 		  </goals>
 		  <configuration>
-		    <jbds.installer>${jbds-710alpha2.installer}</jbds.installer>
+		    <jbds.installer>${jbds-710ga.installer}</jbds.installer>
 		    <features combine.children="append">
-		      <param>org.eclipse.bpmn2.modeler.jboss.runtime.feature.feature.group</param>
-		      <param>org.jboss.tools.bpel.feature.feature.group</param>
-		      <param>org.jboss.tools.esb.feature.feature.group</param>
-		      <param>org.jboss.tools.jbpm.common.feature.feature.group</param>
-		      <param>org.jboss.tools.jbpm.convert.feature.feature.group</param>
-		      <param>org.jboss.tools.jbpm3.feature.feature.group</param>
-		      <param>org.jboss.tools.modeshape.jcr.feature.feature.group</param>
-		      <param>org.jboss.tools.modeshape.rest.feature.feature.group</param>
-		      <param>org.jboss.tools.runtime.drools.detector.feature.feature.group</param>
-		      <param>org.jboss.tools.runtime.esb.detector.feature.feature.group</param>
-		      <param>org.jboss.tools.runtime.jbpm.detector.feature.feature.group</param>
-		      <param>org.drools.eclipse.feature.feature.group</param>
-		      <param>org.eclipse.bpmn2.feature.feature.group</param>
-		      <param>org.eclipse.bpmn2.modeler.examples.feature.feature.group</param>
 		      <param>org.eclipse.bpmn2.modeler.feature.feature.group</param>
-		      <param>org.eclipse.bpmn2.modeler.wsil.feature.feature.group</param>
+		      <param>org.eclipse.bpmn2.modeler.jboss.runtime.feature.feature.group</param>
 		      <param>org.eclipse.bpmn2.feature.feature.group</param>
+		      <param>org.jboss.tools.bpel.feature.feature.group</param>
+		      <param>org.drools.eclipse.feature.feature.group</param>
+		      <param>org.guvnor.tools.feature.feature.group</param>
+		      <param>org.jboss.tools.esb.feature.feature.group</param>
 		      <param>org.fusesource.ide.camel.editor.feature.feature.group</param>
 		      <param>org.fusesource.ide.runtimes.feature.feature.group</param>
 		      <param>org.fusesource.ide.server.extensions.feature.feature.group</param>
-		      <param>org.guvnor.tools.feature.feature.group</param>
 		      <param>org.jbpm.eclipse.feature.feature.group</param>
-		      <param>org.jbpm.eclipse.task.feature.feature.group</param>
+		      <param>org.jboss.tools.runtime.drools.detector.feature.feature.group</param>
+		      <param>org.jboss.tools.runtime.esb.detector.feature.feature.group</param>
+		      <param>org.jboss.tools.runtime.jbpm.detector.feature.feature.group</param>
+		      <param>org.jboss.tools.jbpm.common.feature.feature.group</param>
+		      <param>org.jboss.tools.jbpm3.feature.feature.group</param>
+		      <param>org.jboss.tools.jbpm.convert.feature.feature.group</param>
+		      <param>org.jboss.tools.modeshape.jcr.feature.feature.group</param>
+		      <param>org.jboss.tools.modeshape.rest.feature.feature.group</param>
 		      <param>org.switchyard.tools.feature.feature.group</param>
 		      <param>org.switchyard.tools.bpel.feature.feature.group</param>
 		      <param>org.switchyard.tools.bpmn2.feature.feature.group</param>
 		      <param>org.teiid.datatools.connectivity.feature.feature.group</param>
 		      <param>org.teiid.designer.feature.feature.group</param>
 		      <param>org.teiid.designer.runtime.feature.feature.group</param>
+		      <param>org.teiid.designer.teiid.client.feature.feature.group</param>
 		    </features>
 		  </configuration>
 		</execution>
