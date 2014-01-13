@@ -50,6 +50,7 @@
 	  <jbdsis-700beta4.site>http://www.qa.jboss.com/binaries/RHDS/updates/integration/kepler/integration-stack/aggregate/7.0.0.Beta4</jbdsis-700beta4.site>
 	  <jbdsis-700beta5.site>http://www.qa.jboss.com/binaries/RHDS/builds/staging/JBDSIS-aggregate-disc/all/repo</jbdsis-700beta5.site>
 	  <jbdsis-700cr1.site>https://devstudio.jboss.com/updates/7.0.0/7.0.0.CR1.jbds-is</jbdsis-700cr1.site>
+	  <jbdsis-700cr2.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/kepler/integration-stack/aggregate/7.0.0.CR2</jbdsis-700cr2.site>
 	  <!-- JBDS Plugin -->
 	  <jbds.plugin.version>0.0.2-SNAPSHOT</jbds.plugin.version>
 	  <!-- JBoss Tools -->
