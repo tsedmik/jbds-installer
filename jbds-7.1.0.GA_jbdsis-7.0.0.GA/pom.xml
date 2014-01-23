@@ -129,6 +129,35 @@
 	      </plugins>
 	    </build>
 	  </profile>
+	  <profile>
+	    <id>zip</id>
+	    <properties>
+	      <jbdsis-700ga.site>jar:file:${project.build.directory}/jbdevstudio-integration-stack-updatesite-7.0.0.GA.zip!/</jbdsis-700ga.site>
+	    </properties>
+	    <build>
+	      <plugins>
+		<plugin>
+		  <groupId>com.googlecode.maven-download-plugin</groupId>
+		  <artifactId>maven-download-plugin</artifactId>
+		  <version>1.0.0</version>
+		  <executions>
+		    <execution>
+		      <id>get-jbdsis</id>
+		      <phase>initialize</phase>
+		      <goals>
+			<goal>wget</goal>
+		      </goals>
+		      <configuration>
+			<url>https://devstudio.jboss.com/updates/7.0.0/jbdevstudio-integration-stack-updatesite-7.0.0.GA.zip</url>
+			<unpack>false</unpack>
+			<outputDirectory>${project.build.directory}</outputDirectory>
+		      </configuration>
+		    </execution>
+		  </executions>
+		</plugin>
+	      </plugins>
+	    </build>
+	  </profile>
 	</profiles>
 
 </project>
