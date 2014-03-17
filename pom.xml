@@ -9,8 +9,6 @@
 	<properties>
 	  <!-- JBDS Installer -->
 	  <jbds-502ga.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/5.0.2.GA.installer/jbdevstudio-product-universal-5.0.2.v20130119-0035-H249-GA.jar</jbds-502ga.installer>
-	  <jbds-601ga.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/6.0.1.GA.installer/jbdevstudio-product-universal-6.0.1.GA-v20130327-2052-B361.jar</jbds-601ga.installer>
-	  <jbds-700ga.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/7.0.0.GA.installer/jbdevstudio-product-universal-7.0.0.GA-v20130720-0044-B364.jar</jbds-700ga.installer>
 	  <jbds-701ga.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/7.0.1.GA.installer_NOT_RELEASED/jbdevstudio-product-universal-7.0.1.GA-v20130930-2238-B7.jar</jbds-701ga.installer>
 	  <jbds-710ga.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/7.1.0.GA.installer/jbdevstudio-product-universal-7.1.0.GA-v20131208-0703-B592.jar</jbds-710ga.installer>
 	  <jbds-711cr1.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/7.1.1.CR1b.installer/jbdevstudio-product-universal-7.1.1.GA-v20140315-1236-B686.jar</jbds-711cr1.installer>
@@ -19,9 +17,7 @@
 	  <soa-503ga.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/5.0.3.GA.soa-tooling</soa-503ga.site>
 	  <soa-504ga.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/5.0.4.GA.soa-tooling</soa-504ga.site>
 	  <!-- Red Deer -->
-	  <reddeer-020.site>http://download.jboss.org/jbosstools/builds/staging/RedDeer_juno/all/repo</reddeer-020.site>
 	  <reddeer-master.site>http://download.jboss.org/jbosstools/builds/staging/RedDeer_master/all/repo</reddeer-master.site>
-	  <reddeer-juno.site>${reddeer-020.site}</reddeer-juno.site>
 	  <!-- SWT Bot -->
 	  <swtbot-indigo.site>http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site</swtbot-indigo.site>
 	  <swtbot-juno.site>http://download.eclipse.org/technology/swtbot/releases/latest</swtbot-juno.site>
@@ -31,30 +27,10 @@
 	  <tests-juno.site>http://download.jboss.org/jbosstools/updates/nightly/coretests/4.0.juno</tests-juno.site>
 	  <tests-kepler.site>http://download.jboss.org/jbosstools/updates/nightly/coretests/4.1.kepler</tests-kepler.site>
 	  <!-- JBTIS -->
-	  <jbtis-400ci.site>http://download.jboss.org/jbosstools/updates/integration/juno/integration-stack/aggregate/4.0.0</jbtis-400ci.site>
-	  <jbtis-401ci.site>http://download.jboss.org/jbosstools/updates/integration/juno/integration-stack/aggregate/4.0.1</jbtis-401ci.site>
-	  <jbtis-410ci.site>http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.0</jbtis-410ci.site>
-	  <jbtis-411ci.site>http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.1</jbtis-411ci.site>
-	  <jbtis-412ci.site>http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.2</jbtis-412ci.site>
-	  <jbtis-413beta2.site>http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.3.Beta2</jbtis-413beta2.site>
-	  <jbtis-413beta3.site>http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.3.Beta3</jbtis-413beta3.site>
-	  <jbtis-413beta4.site>http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.3.Beta4</jbtis-413beta4.site>
-	  <jbtis-413beta5.site>http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.3.Beta5</jbtis-413beta5.site>
-	  <jbtis-413cr2.site>http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/aggregate/4.1.3.CR2</jbtis-413cr2.site>
 	  <jbtis-413final.site>http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/aggregate/4.1.3.Final</jbtis-413final.site>
 	  <!-- JBDS -->
 	  <jbds-700ga.site>https://devstudio.jboss.com/updates/7.0</jbds-700ga.site>
 	  <!-- JBDSIS -->
-	  <jbdsis-600ga.site>http://www.qa.jboss.com/binaries/RHDS/builds/staging/jbdsis-6.0.0-updatesite</jbdsis-600ga.site>
-	  <jbdsis-700ga.site>http://www.qa.jboss.com/binaries/RHDS/builds/staging/jbdsis-7.0.0-updatesite</jbdsis-700ga.site>
-	  <jbdsis-701ga.site>http://www.qa.jboss.com/binaries/RHDS/builds/staging/jbdsis-7.0.1-updatesite</jbdsis-701ga.site>
-	  <jbdsis-700beta1.site>http://www.qa.jboss.com/binaries/RHDS/updates/integration/kepler/integration-stack/aggregate/7.0.0.Beta1</jbdsis-700beta1.site>
-	  <jbdsis-700beta2.site>http://www.qa.jboss.com/binaries/RHDS/updates/integration/kepler/integration-stack/aggregate/7.0.0.Beta2</jbdsis-700beta2.site>
-	  <jbdsis-700beta3.site>http://www.qa.jboss.com/binaries/RHDS/updates/integration/kepler/integration-stack/aggregate/7.0.0.Beta3</jbdsis-700beta3.site>
-	  <jbdsis-700beta4.site>http://www.qa.jboss.com/binaries/RHDS/updates/integration/kepler/integration-stack/aggregate/7.0.0.Beta4</jbdsis-700beta4.site>
-	  <jbdsis-700beta5.site>http://www.qa.jboss.com/binaries/RHDS/builds/staging/JBDSIS-aggregate-disc/all/repo</jbdsis-700beta5.site>
-	  <jbdsis-700cr1.site>https://devstudio.jboss.com/updates/7.0.0/7.0.0.CR1.jbds-is</jbdsis-700cr1.site>
-	  <jbdsis-700cr2.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/kepler/integration-stack/aggregate/7.0.0.CR2</jbdsis-700cr2.site>
 	  <jbdsis-700ga.site>https://devstudio.jboss.com/updates/7.0/integration-stack</jbdsis-700ga.site>
 	  <jbdsis-701cr1.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/kepler/integration-stack/aggregate/7.0.1.CR1</jbdsis-701cr1.site>
 	  <!-- JBDS Plugin -->
@@ -66,13 +42,6 @@
 	  <!-- Eclipse Update Sites -->
 	  <eclipse-indigo.site>http://download.eclipse.org/releases/indigo</eclipse-indigo.site>
 	  <eclipse-juno.site>http://download.eclipse.org/releases/juno</eclipse-juno.site>
-	  <!-- SOA Platform -->
-	  <soa520.url>http://10.34.32.168/released/soa-5.2.0.GA/soa-p-5.2.0.GA.zip</soa520.url>
-	  <eds520.url>http://10.34.32.168/released/soa-5.2.0.GA/eds-p-5.2.0.GA.zip</eds520.url>
-	  <soa530.url>http://10.34.32.168/released/soa-5.3.0.GA/soa-p-5.3.0.GA.zip</soa530.url>
-	  <eds530.url>http://10.34.32.168/released/soa-5.3.0.GA/eds-p-5.3.0.GA.zip</eds530.url>
-	  <soa531.url>http://10.34.32.168/released/soa-5.3.1.GA/soa-p-5.3.1.GA.zip</soa531.url>
-	  <eds531.url>http://10.34.32.168/released/soa-5.3.1.GA/eds-p-5.3.1.GA.zip</eds531.url>
 	  <!-- Fuse -->
 	  <fuse-720ci.site>http://download.jboss.org/jbosstools/updates/integration/kepler/soa-tooling/fuse-tooling/7.2.0/all/repo</fuse-720ci.site>
 	  <!-- Other Properties -->
@@ -117,11 +86,15 @@
 	</pluginRepositories>
 
 	<modules>
+	  <module>jbds-5.0.2.GA</module>
+	  <module>jbds-5.0.2.GA_soa-5.0.4.GA</module>
 	  <module>jbds-7.0.1.GA</module>
 	  <module>jbds-7.1.0.GA</module>
-	  <module>jbds-7.1.0.GA_jbdsis-7.0.0.CR2</module>
+	  <module>jbds-7.1.1.CR1</module>
 	  <module>jbds-7.1.0.GA_jbdsis-7.0.0.GA</module>
-	  <module>jbt-4.1.0.Final_jbtis-4.1.3.CR2</module>
+	  <module>jbds-7.1.0.GA_jbdsis-7.0.1.CR1</module>
+	  <module>jbds-7.1.1.CR1_jbdsis-7.0.1.CR1</module>
+	  <module>jbt-4.1.0.Final</module>
 	  <module>jbt-4.1.0.Final_jbtis-4.1.3.Final</module>
 	</modules>
 
