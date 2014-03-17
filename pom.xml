@@ -56,6 +56,7 @@
 	  <jbdsis-700cr1.site>https://devstudio.jboss.com/updates/7.0.0/7.0.0.CR1.jbds-is</jbdsis-700cr1.site>
 	  <jbdsis-700cr2.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/kepler/integration-stack/aggregate/7.0.0.CR2</jbdsis-700cr2.site>
 	  <jbdsis-700ga.site>https://devstudio.jboss.com/updates/7.0/integration-stack</jbdsis-700ga.site>
+	  <jbdsis-701cr1.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/kepler/integration-stack/aggregate/7.0.1.CR1</jbdsis-701cr1.site>
 	  <!-- JBDS Plugin -->
 	  <jbds.plugin.version>0.0.2-SNAPSHOT</jbds.plugin.version>
 	  <!-- JBoss Tools -->
