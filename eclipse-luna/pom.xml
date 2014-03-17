@@ -22,7 +22,7 @@
 		    <goal>install</goal>
 		  </goals>
 		  <configuration>
-		    <eclipse.version>jee-luna-M5</eclipse.version>
+		    <eclipse.version>jee-luna-M6</eclipse.version>
 		  </configuration>
 		</execution>
 	      </executions>
