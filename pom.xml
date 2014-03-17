@@ -28,6 +28,7 @@
 	  <tests-kepler.site>http://download.jboss.org/jbosstools/updates/nightly/coretests/4.1.kepler</tests-kepler.site>
 	  <!-- JBTIS -->
 	  <jbtis-413final.site>http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/aggregate/4.1.3.Final</jbtis-413final.site>
+	  <jbtis-414cr1.site>http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/aggregate/4.1.4.CR1</jbtis-414cr1.site>
 	  <!-- JBDS -->
 	  <jbds-700ga.site>https://devstudio.jboss.com/updates/7.0</jbds-700ga.site>
 	  <!-- JBDSIS -->
@@ -38,7 +39,7 @@
 	  <!-- JBoss Tools -->
 	  <jbt-juno.site>http://download.jboss.org/jbosstools/updates/stable/juno</jbt-juno.site>
 	  <jbt-401final.site>http://download.jboss.org/jbosstools/updates/stable/juno</jbt-401final.site>
-	  <jbt-410final.site>http://download.jboss.org/jbosstools/updates/stable/kepler</jbt-410final.site>
+	  <jbt-411final.site>http://download.jboss.org/jbosstools/updates/stable/kepler</jbt-411final.site>
 	  <!-- Eclipse Update Sites -->
 	  <eclipse-indigo.site>http://download.eclipse.org/releases/indigo</eclipse-indigo.site>
 	  <eclipse-juno.site>http://download.eclipse.org/releases/juno</eclipse-juno.site>
@@ -94,8 +95,9 @@
 	  <module>jbds-7.1.0.GA_jbdsis-7.0.0.GA</module>
 	  <module>jbds-7.1.0.GA_jbdsis-7.0.1.CR1</module>
 	  <module>jbds-7.1.1.CR1_jbdsis-7.0.1.CR1</module>
-	  <module>jbt-4.1.0.Final</module>
-	  <module>jbt-4.1.0.Final_jbtis-4.1.3.Final</module>
+	  <module>jbt-4.1.1.Final</module>
+	  <module>jbt-4.1.1.Final_jbtis-4.1.3.Final</module>
+	  <module>jbt-4.1.1.Final_jbtis-4.1.4.CR1</module>
 	</modules>
 
 </project>

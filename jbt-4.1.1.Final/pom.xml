@@ -6,13 +6,13 @@
 	  <artifactId>parent</artifactId>
 	  <version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>jbt-4.1.0.Final</artifactId>
+	<artifactId>jbt-4.1.1.Final</artifactId>
 	<packaging>pom</packaging>
 	
 	<repositories>
 	  <repository>
 	    <id>jbt</id>
-	    <url>${jbt-410final.site}</url>
+	    <url>${jbt-411final.site}</url>
 	    <layout>update-site</layout>
 	  </repository>
 	</repositories>
@@ -30,7 +30,7 @@
 		    <goal>install</goal>
 		  </goals>
 		  <configuration>
-		    <eclipse.version>jee-kepler-SR1</eclipse.version>
+		    <eclipse.version>jee-kepler-SR2</eclipse.version>
 		    <features combine.children="append">
 		      <param>org.jboss.ide.eclipse.as.feature.feature.group</param>
 		    </features>
