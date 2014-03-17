@@ -13,6 +13,7 @@
 	  <jbds-700ga.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/7.0.0.GA.installer/jbdevstudio-product-universal-7.0.0.GA-v20130720-0044-B364.jar</jbds-700ga.installer>
 	  <jbds-701ga.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/7.0.1.GA.installer_NOT_RELEASED/jbdevstudio-product-universal-7.0.1.GA-v20130930-2238-B7.jar</jbds-701ga.installer>
 	  <jbds-710ga.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/7.1.0.GA.installer/jbdevstudio-product-universal-7.1.0.GA-v20131208-0703-B592.jar</jbds-710ga.installer>
+	  <jbds-711cr1.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/7.1.1.CR1b.installer/jbdevstudio-product-universal-7.1.1.GA-v20140315-1236-B686.jar</jbds-711cr1.installer>
 	  <jbds-800alpha.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/8.0.0.Alpha2b.installer/jbdevstudio-product-universal-8.0.0.Alpha2-v20140214-1707-B71.jar</jbds-800alpha.installer>
 	  <!-- SOA Tooling -->
 	  <soa-503ga.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/5.0.3.GA.soa-tooling</soa-503ga.site>
