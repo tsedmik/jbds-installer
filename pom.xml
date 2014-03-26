@@ -90,7 +90,7 @@
 	</pluginRepositories>
 
 	<modules>
-	  <module>eclipse-keler</module>
+	  <module>eclipse-kepler</module>
 	  <module>eclipse-luna</module>
 	  <module>jbds-5.0.2.GA</module>
 	  <module>jbds-5.0.2.GA_soa-5.0.4.GA</module>
