@@ -132,7 +132,7 @@
 	  <profile>
 	    <id>zip</id>
 	    <properties>
-	      <jbdsis-700ga.site>jar:file:${project.build.directory}/jbdevstudio-integration-stack-updatesite-7.0.0.GA.zip!/</jbdsis-700ga.site>
+	      <jbdsis-701cr1.site>jar:file:${project.build.directory}/jbdevstudio-integration-stack-updatesite-7.0.1.CR1.zip!/</jbdsis-701cr1.site>
 	    </properties>
 	    <build>
 	      <plugins>
@@ -148,7 +148,7 @@
 			<goal>wget</goal>
 		      </goals>
 		      <configuration>
-			<url>https://devstudio.jboss.com/updates/7.0.0/jbdevstudio-integration-stack-updatesite-7.0.0.GA.zip</url>
+			<url>https://devstudio.jboss.com/updates/7.0.0/jbdevstudio-integration-stack-updatesite-7.0.1.CR1.zip</url>
 			<unpack>false</unpack>
 			<outputDirectory>${project.build.directory}</outputDirectory>
 		      </configuration>
