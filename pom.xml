@@ -31,12 +31,14 @@
 	  <jbtis-413final.site>http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/aggregate/4.1.3.Final</jbtis-413final.site>
 	  <jbtis-414cr1.site>http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/aggregate/4.1.4.CR1</jbtis-414cr1.site>
 	  <jbtis-414cr2.site>http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/aggregate/4.1.4.CR2</jbtis-414cr2.site>
+	  <jbtis-414cr3.site>http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/aggregate/4.1.4.CR3</jbtis-414cr3.site>
 	  <!-- JBDS -->
 	  <jbds-700ga.site>https://devstudio.jboss.com/updates/7.0</jbds-700ga.site>
 	  <!-- JBDSIS -->
 	  <jbdsis-700ga.site>https://devstudio.jboss.com/updates/7.0/integration-stack</jbdsis-700ga.site>
 	  <jbdsis-701cr1.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/kepler/integration-stack/aggregate/7.0.1.CR1</jbdsis-701cr1.site>
 	  <jbdsis-701cr2.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/kepler/integration-stack/aggregate/7.0.1.CR2</jbdsis-701cr2.site>
+	  <jbdsis-701cr3.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/kepler/integration-stack/aggregate/7.0.1.CR3</jbdsis-701cr3.site>
 	  <!-- JBDS Plugin -->
 	  <jbds.plugin.version>0.0.2-SNAPSHOT</jbds.plugin.version>
 	  <!-- JBoss Tools -->
@@ -102,10 +104,12 @@
 	  <module>jbds-7.1.0.GA_jbdsis-7.0.1.CR1</module>
 	  <module>jbds-7.1.1.CR1_jbdsis-7.0.1.CR1</module>
 	  <module>jbds-7.1.1.GA_jbdsis-7.0.1.CR2</module>
+	  <module>jbds-7.1.1.GA_jbdsis-7.0.1.CR3</module>
 	  <module>jbt-4.1.1.Final</module>
 	  <module>jbt-4.1.1.Final_jbtis-4.1.3.Final</module>
 	  <module>jbt-4.1.1.Final_jbtis-4.1.4.CR1</module>
 	  <module>jbt-4.1.1.Final_jbtis-4.1.4.CR2</module>
+	  <module>jbt-4.1.1.Final_jbtis-4.1.4.CR3</module>
 	</modules>
 
 </project>
