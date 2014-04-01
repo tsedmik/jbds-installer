@@ -112,4 +112,28 @@
 	  <module>jbt-4.1.1.Final_jbtis-4.1.4.CR3</module>
 	</modules>
 
+	<build>
+	  <plugins>
+	    <plugin>
+	      <groupId>com.googlecode.maven-download-plugin</groupId>
+	      <artifactId>maven-download-plugin</artifactId>
+	      <version>1.0.0</version>
+	      <executions>
+		<execution>
+		  <id>get-installation-test</id>
+		  <phase>test</phase>
+		  <goals>
+		    <goal>wget</goal>
+		  </goals>
+		  <configuration>
+		    <url>https://repository.jboss.org/nexus/content/groups/public/org/jboss/tools/installation-tests/scripts/4.2.0-SNAPSHOT/scripts-4.2.0-20140329.061105-24-delivery.zip</url>
+		    <unpack>true</unpack>
+		    <outputDirectory>${project.build.directory}</outputDirectory>
+		  </configuration>
+		</execution>
+	      </executions>
+	    </plugin>
+	  </plugins>
+	</build>
+
 </project>
