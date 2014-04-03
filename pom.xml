@@ -98,11 +98,8 @@
 	  <module>jbds-5.0.2.GA_soa-5.0.4.GA</module>
 	  <module>jbds-7.0.1.GA</module>
 	  <module>jbds-7.1.0.GA</module>
-	  <module>jbds-7.1.1.CR1</module>
 	  <module>jbds-7.1.1.GA</module>
 	  <module>jbds-7.1.0.GA_jbdsis-7.0.0.GA</module>
-	  <module>jbds-7.1.0.GA_jbdsis-7.0.1.CR1</module>
-	  <module>jbds-7.1.1.CR1_jbdsis-7.0.1.CR1</module>
 	  <module>jbds-7.1.1.GA_jbdsis-7.0.1.CR2</module>
 	  <module>jbds-7.1.1.GA_jbdsis-7.0.1.CR3</module>
 	  <module>jbt-4.1.1.Final</module>
