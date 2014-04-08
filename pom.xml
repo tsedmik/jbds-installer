@@ -19,6 +19,7 @@
 	  <soa-504ga.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/5.0.4.GA.soa-tooling</soa-504ga.site>
 	  <!-- Red Deer -->
 	  <reddeer-master.site>http://download.jboss.org/jbosstools/builds/staging/RedDeer_master/all/repo</reddeer-master.site>
+	  <reddeer-050.site>http://download.jboss.org/jbosstools/updates/stable/luna/core/reddeer/0.5.0</reddeer-050.site>
 	  <!-- SWT Bot -->
 	  <swtbot-indigo.site>http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site</swtbot-indigo.site>
 	  <swtbot-juno.site>http://download.eclipse.org/technology/swtbot/releases/latest</swtbot-juno.site>
