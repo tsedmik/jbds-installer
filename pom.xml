@@ -40,7 +40,7 @@
 	  <jbdsis-701cr2.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/kepler/integration-stack/aggregate/7.0.1.CR2</jbdsis-701cr2.site>
 	  <jbdsis-701cr3.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/kepler/integration-stack/aggregate/7.0.1.CR3</jbdsis-701cr3.site>
 	  <!-- JBDS Plugin -->
-	  <jbds.plugin.version>0.0.2-SNAPSHOT</jbds.plugin.version>
+	  <jbds.plugin.version>0.0.3-SNAPSHOT</jbds.plugin.version>
 	  <!-- JBoss Tools -->
 	  <jbt-juno.site>http://download.jboss.org/jbosstools/updates/stable/juno</jbt-juno.site>
 	  <jbt-401final.site>http://download.jboss.org/jbosstools/updates/stable/juno</jbt-401final.site>
