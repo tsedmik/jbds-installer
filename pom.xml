@@ -40,7 +40,7 @@
 	  <jbdsis-701cr1.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/kepler/integration-stack/aggregate/7.0.1.CR1</jbdsis-701cr1.site>
 	  <jbdsis-701cr2.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/kepler/integration-stack/aggregate/7.0.1.CR2</jbdsis-701cr2.site>
 	  <jbdsis-701cr3.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/kepler/integration-stack/aggregate/7.0.1.CR3</jbdsis-701cr3.site>
-	  <jbdsis-701ga.site>https://devstudio.jboss.com/updates/7.0-development/integration-stack/</jbdsis-701ga.site>
+	  <jbdsis-701ga.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/kepler/integration-stack/aggregate/7.0.1.GA</jbdsis-701ga.site>
 	  <!-- JBDS Plugin -->
 	  <jbds.plugin.version>0.0.3-SNAPSHOT</jbds.plugin.version>
 	  <!-- JBoss Tools -->
