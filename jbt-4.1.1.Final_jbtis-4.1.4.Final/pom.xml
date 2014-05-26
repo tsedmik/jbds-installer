@@ -6,7 +6,7 @@
 	  <artifactId>parent</artifactId>
 	  <version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>jbt-4.1.1.Final_jbtis-4.1.4.CR1</artifactId>
+	<artifactId>jbt-4.1.1.Final_jbtis-4.1.4.Final</artifactId>
 	<packaging>pom</packaging>
 	
 	<repositories>
@@ -17,7 +17,7 @@
 	  </repository>
 	  <repository>
 	    <id>jbtis</id>
-	    <url>${jbtis-414cr1.site}</url>
+	    <url>${jbtis-414final.site}</url>
 	    <layout>update-site</layout>
 	  </repository>
 	</repositories>
@@ -35,7 +35,7 @@
 		    <goal>install</goal>
 		  </goals>
 		  <configuration>
-		    <eclipse.version>jee-kepler-SR2</eclipse.version>
+		    <eclipse.version>${eclipse-luna}</eclipse.version>
 		    <features combine.children="append">
 		      <param>org.jboss.ide.eclipse.as.feature.feature.group</param>
 		      <param>org.eclipse.bpmn2.modeler.feature.feature.group</param>
@@ -83,7 +83,7 @@
 	      </repository>
 	      <repository>
 		<id>reddeer</id>
-		<url>${reddeer-master.site}</url>
+		<url>${reddeer-050.site}</url>
 		<layout>update-site</layout>
 	      </repository>
 	      <repository>
