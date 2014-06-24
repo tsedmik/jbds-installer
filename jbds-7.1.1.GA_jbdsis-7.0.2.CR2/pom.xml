@@ -132,7 +132,7 @@
 	  <profile>
 	    <id>zip</id>
 	    <properties>
-	      <jbdsis-702cr1.site>jar:file:${project.build.directory}/jbdevstudio-integration-stack-updatesite-7.0.2.CR2.zip!/</jbdsis-702cr1.site>
+	      <jbdsis-702cr2.site>jar:file:${project.build.directory}/jbdevstudio-integration-stack-updatesite-7.0.2.CR2.zip!/</jbdsis-702cr2.site>
 	    </properties>
 	    <build>
 	      <plugins>
