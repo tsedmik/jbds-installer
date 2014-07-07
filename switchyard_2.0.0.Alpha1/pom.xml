@@ -42,7 +42,8 @@
 		  <configuration>
 		    <eclipse.version>${eclipse-kepler}</eclipse.version>
 		    <features combine.children="append">
-		      <param>org.jboss.ide.eclipse.as.feature.feature.group</param>
+		      <!-- We cannot use JBossAS plugin, see SWITCHYARD-2206 -->
+		      <!--param>org.jboss.ide.eclipse.as.feature.feature.group</param-->
 		      <param>org.switchyard.tools.feature.feature.group</param>
 		      <param>org.switchyard.tools.bpel.feature.feature.group</param>
 		      <param>org.switchyard.tools.bpmn2.feature.feature.group</param>
