@@ -16,7 +16,7 @@
 	  <jbds-800alpha.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/8.0.0.Alpha2b.installer/jbdevstudio-product-universal-8.0.0.Alpha2-v20140214-1707-B71.jar</jbds-800alpha.installer>
 	  <!-- Eclipse IDE -->
 	  <eclipse-kepler>jee-kepler-SR2</eclipse-kepler>
-	  <eclipse-luna>jee-luna-RC2</eclipse-luna>
+	  <eclipse-luna>jee-luna-R</eclipse-luna>
 	  <!-- SOA Tooling -->
 	  <soa-503ga.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/5.0.3.GA.soa-tooling</soa-503ga.site>
 	  <soa-504ga.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/5.0.4.GA.soa-tooling</soa-504ga.site>
@@ -51,6 +51,11 @@
 	  <!-- Eclipse Update Sites -->
 	  <eclipse-indigo.site>http://download.eclipse.org/releases/indigo</eclipse-indigo.site>
 	  <eclipse-juno.site>http://download.eclipse.org/releases/juno</eclipse-juno.site>
+	  <eclipse-kepler.site>http://download.eclipse.org/releases/kepler</eclipse-kepler.site>
+	  <eclipse-luna.site>http://download.eclipse.org/releases/luna</eclipse-luna.site>
+	  <!-- Tycho Configurator -->
+	  <tycho-060.site>http://repository.tesla.io:8081/nexus/content/sites/m2e.extras/m2eclipse-tycho/0.6.0/N/0.6.0.201210231015</tycho-060.site>
+	  <tycho-070.site>http://repository.tesla.io:8081/nexus/content/sites/m2e.extras/m2eclipse-tycho/0.7.0/N/0.7.0.201405272100</tycho-070.site>
 	  <!-- Fuse -->
 	  <fuse-720ci.site>http://download.jboss.org/jbosstools/updates/integration/kepler/soa-tooling/fuse-tooling/7.2.0/all/repo</fuse-720ci.site>
 	  <!-- Other Properties -->
