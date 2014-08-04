@@ -6,13 +6,13 @@
 	  <artifactId>parent</artifactId>
 	  <version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>jbds-5.0.2.GA_soa-5.0.4.GA</artifactId>
+	<artifactId>jbds-5.0.2.GA_soa-5.0.6.GA</artifactId>
 	<packaging>pom</packaging>
 	
 	<repositories>
 	  <repository>
 	    <id>soa</id>
-	    <url>${soa-504ga.site}</url>
+	    <url>jar:file:${project.build.directory}/jbdevstudio-soa-tooling-updatesite-5.0.6.v20140303-0909-H86-GA.zip!/</url>
 	    <layout>update-site</layout>
 	  </repository>
 	</repositories>
@@ -43,6 +43,25 @@
 		      <param>org.teiid.designer.feature.feature.group</param>
 		      <param>org.teiid.designer.runtime.feature.feature.group</param>
 		    </features>
+		  </configuration>
+		</execution>
+	      </executions>
+	    </plugin>
+	    <plugin>
+	      <groupId>com.googlecode.maven-download-plugin</groupId>
+	      <artifactId>maven-download-plugin</artifactId>
+	      <version>1.0.0</version>
+	      <executions>
+		<execution>
+		  <id>get-soa</id>
+		  <phase>initialize</phase>
+		  <goals>
+		    <goal>wget</goal>
+		  </goals>
+		  <configuration>
+		    <url>https://devstudio.jboss.com/updates/5.0.0/jbdevstudio-soa-tooling-updatesite-5.0.6.v20140303-0909-H86-GA.zip</url>
+		    <unpack>false</unpack>
+		    <outputDirectory>${project.build.directory}</outputDirectory>
 		  </configuration>
 		</execution>
 	      </executions>

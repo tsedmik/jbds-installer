@@ -17,9 +17,6 @@
 	  <!-- Eclipse IDE -->
 	  <eclipse-kepler>jee-kepler-SR2</eclipse-kepler>
 	  <eclipse-luna>jee-luna-R</eclipse-luna>
-	  <!-- SOA Tooling -->
-	  <soa-503ga.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/5.0.3.GA.soa-tooling</soa-503ga.site>
-	  <soa-504ga.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/5.0.4.GA.soa-tooling</soa-504ga.site>
 	  <!-- Red Deer -->
 	  <reddeer-master.site>http://download.jboss.org/jbosstools/builds/staging/RedDeer_master/all/repo</reddeer-master.site>
 	  <reddeer-050.site>http://download.jboss.org/jbosstools/updates/stable/luna/core/reddeer/0.5.0</reddeer-050.site>
@@ -103,7 +100,7 @@
 	  <module>eclipse-kepler</module>
 	  <module>eclipse-luna</module>
 	  <module>jbds-5.0.2.GA</module>
-	  <module>jbds-5.0.2.GA_soa-5.0.4.GA</module>
+	  <module>jbds-5.0.2.GA_soa-5.0.6.GA</module>
 	  <module>jbds-7.0.1.GA</module>
 	  <module>jbds-7.1.0.GA</module>
 	  <module>jbds-7.1.1.GA</module>
