@@ -39,6 +39,7 @@
 	  <jbdsis-701ga.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/kepler/integration-stack/aggregate/7.0.1.GA</jbdsis-701ga.site>
 	  <jbdsis-702cr1.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/kepler/integration-stack/aggregate/7.0.2.CR1</jbdsis-702cr1.site>
 	  <jbdsis-702cr2.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/kepler/integration-stack/aggregate/7.0.2.CR2</jbdsis-702cr2.site>
+	  <jbtis-420alpha1.site>http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.0.Alpha1/</jbtis-420alpha1.site>
 	  <!-- JBDS Plugin -->
 	  <jbds.plugin.version>0.0.3</jbds.plugin.version>
 	  <!-- JBoss Tools -->
@@ -102,6 +103,7 @@
 	  <module>eclipse-kepler_jbtis-4.1.4.Final</module>
 	  <module>eclipse-kepler_jbtis-4.1.5.Final</module>
 	  <module>eclipse-luna</module>
+	  <module>eclipse-luna_jbtis-4.2.0.Alpha1</module>
 	  <module>fuse-7.2.0.CI</module>
 	  <module>jbds-5.0.2.GA</module>
 	  <module>jbds-5.0.2.GA_soa-5.0.6.GA</module>
