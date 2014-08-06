@@ -98,18 +98,24 @@
 
 	<modules>
 	  <module>eclipse-kepler</module>
+	  <module>eclipse-kepler_jbtis-4.1.3.Final</module>
+	  <module>eclipse-kepler_jbtis-4.1.4.Final</module>
+	  <module>eclipse-kepler_jbtis-4.1.5.Final</module>
 	  <module>eclipse-luna</module>
+	  <module>fuse-7.2.0.CI</module>
 	  <module>jbds-5.0.2.GA</module>
 	  <module>jbds-5.0.2.GA_soa-5.0.6.GA</module>
 	  <module>jbds-7.0.1.GA</module>
 	  <module>jbds-7.1.0.GA</module>
-	  <module>jbds-7.1.1.GA</module>
 	  <module>jbds-7.1.0.GA_jbdsis-7.0.0.GA</module>
+	  <module>jbds-7.1.1.GA</module>
 	  <module>jbds-7.1.1.GA_jbdsis-7.0.1.GA</module>
 	  <module>jbds-7.1.1.GA_jbdsis-7.0.2.GA</module>
+	  <module>jbds-8.0.0.Alpha</module>
 	  <module>jbt-4.1.1.Final</module>
 	  <module>jbt-4.1.1.Final_jbtis-4.1.3.Final</module>
 	  <module>jbt-4.1.1.Final_jbtis-4.1.4.Final</module>
+	  <module>switchyard_2.0.0.Alpha1</module>
 	</modules>
 
 </project>
