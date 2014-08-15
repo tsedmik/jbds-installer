@@ -12,7 +12,7 @@
 	<repositories>
 	  <repository>
 	    <id>jbtis</id>
-	    <url>${jbtis-420alpha1.site}</url>
+	    <url>jar:file:${project.build.directory}/jbosstools-integration-stack-aggregate-4.2.0.Alpha1.zip!/</url>
 	    <layout>update-site</layout>
 	  </repository>
 	</repositories>
@@ -56,6 +56,26 @@
                 </execution>
               </executions>
             </plugin>
+	    <plugin>
+	      <groupId>com.googlecode.maven-download-plugin</groupId>
+	      <artifactId>maven-download-plugin</artifactId>
+	      <version>1.0.0</version>
+	      <executions>
+		<execution>
+		  <id>get-jbtis</id>
+		  <phase>initialize</phase>
+		  <goals>
+		    <goal>wget</goal>
+		  </goals>
+		  <configuration>
+		    <url>http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/jbosstools-integration-stack-aggregate-4.2.0.Alpha1.zip</url>
+		    <unpack>false</unpack>
+		    <outputDirectory>${project.build.directory}</outputDirectory>
+		    <md5>d3bd0db9417259f42bf0ee950e630b49</md5>
+		  </configuration>
+		</execution>
+	      </executions>
+	    </plugin>
           </plugins>
         </build>
 	
