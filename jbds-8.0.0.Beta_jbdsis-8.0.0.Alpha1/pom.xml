@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+	  <groupId>org.jboss.apodhrad.jbds.installer</groupId>
+	  <artifactId>parent</artifactId>
+	  <version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>jbds-8.0.0.Beta_jbdsis-8.0.0.Alpha1</artifactId>
+	<packaging>pom</packaging>
+
+	<repositories>
+	  <repository>
+	    <id>jbds</id>
+	    <url>${jbds-800dev.site}</url>
+	    <layout>update-site</layout>
+	  </repository>
+	  <repository>
+	    <id>jbdsis</id>
+	    <url>http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.0.Alpha1</url>
+	    <layout>update-site</layout>
+	  </repository>
+	</repositories>
+
+	<build>
+	  <plugins>
+	    <plugin>
+	      <groupId>org.jboss.apodhrad</groupId>
+	      <artifactId>jbds-plugin</artifactId>
+	      <version>${jbds.plugin.version}</version>
+	      <executions>
+		<execution>
+		  <id>jbds</id>
+		  <goals>
+		    <goal>install</goal>
+		  </goals>
+		  <configuration>
+		    <jbds.installer>${jbds-800beta.installer}</jbds.installer>
+		    <features combine.children="append">
+		      <param>org.eclipse.bpmn2.modeler.feature.feature.group</param>
+		      <param>org.eclipse.bpmn2.modeler.jboss.runtime.feature.feature.group</param>
+		      <param>org.eclipse.bpmn2.feature.feature.group</param>
+		      <param>org.jboss.tools.bpel.feature.feature.group</param>
+		      <param>org.drools.eclipse.feature.feature.group</param>
+		      <param>org.guvnor.tools.feature.feature.group</param>
+		      <param>org.jboss.tools.esb.feature.feature.group</param>
+		      <param>org.fusesource.ide.camel.editor.feature.feature.group</param>
+		      <param>org.fusesource.ide.runtimes.feature.feature.group</param>
+		      <param>org.fusesource.ide.server.extensions.feature.feature.group</param>
+		      <param>org.jbpm.eclipse.feature.feature.group</param>
+		      <param>org.jboss.tools.runtime.drools.detector.feature.feature.group</param>
+		      <param>org.jboss.tools.runtime.esb.detector.feature.feature.group</param>
+		      <param>org.jboss.tools.runtime.jbpm.detector.feature.feature.group</param>
+		      <param>org.jboss.tools.jbpm.common.feature.feature.group</param>
+		      <param>org.jboss.tools.jbpm3.feature.feature.group</param>
+		      <param>org.jboss.tools.jbpm.convert.feature.feature.group</param>
+		      <param>org.jboss.tools.modeshape.jcr.feature.feature.group</param>
+		      <param>org.jboss.tools.modeshape.rest.feature.feature.group</param>
+		      <param>org.switchyard.tools.feature.feature.group</param>
+		      <param>org.switchyard.tools.bpel.feature.feature.group</param>
+		      <param>org.switchyard.tools.bpmn2.feature.feature.group</param>
+		    </features>
+		  </configuration>
+		</execution>
+	      </executions>
+	    </plugin>
+	  </plugins>
+	</build>
+
+</project>

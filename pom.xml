@@ -35,6 +35,7 @@
 	  <jbtis-415final.site>http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/aggregate/4.1.5.Final</jbtis-415final.site>
 	  <!-- JBDS -->
 	  <jbds-700ga.site>https://devstudio.jboss.com/updates/7.0</jbds-700ga.site>
+	  <jbds-800dev.site>https://devstudio.jboss.com/updates/8.0-development</jbds-800dev.site>
 	  <!-- JBDSIS -->
 	  <jbdsis-700ga.site>https://devstudio.jboss.com/updates/7.0/integration-stack</jbdsis-700ga.site>
 	  <jbdsis-701ga.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/kepler/integration-stack/aggregate/7.0.1.GA</jbdsis-701ga.site>
@@ -115,6 +116,7 @@
 	  <module>jbds-7.1.1.GA_jbdsis-7.0.1.GA</module>
 	  <module>jbds-7.1.1.GA_jbdsis-7.0.2.GA</module>
 	  <module>jbds-8.0.0.Beta</module>
+	  <module>jbds-8.0.0.Beta_jbdsis-8.0.0.Alpha1</module>
 	  <module>jbt-4.1.1.Final</module>
 	  <module>jbt-4.1.1.Final_jbtis-4.1.3.Final</module>
 	  <module>jbt-4.1.1.Final_jbtis-4.1.4.Final</module>
