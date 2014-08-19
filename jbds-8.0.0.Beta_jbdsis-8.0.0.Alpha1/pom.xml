@@ -67,4 +67,66 @@
 	  </plugins>
 	</build>
 
+	<profiles>
+	  <profile>
+	    <id>qa</id>
+	    <repositories>
+	      <repository>
+		<id>swtbot</id>
+		<url>${swtbot-latest.site}</url>
+		<layout>update-site</layout>
+	      </repository>
+	      <repository>
+		<id>reddeer</id>
+		<url>${reddeer-master.site}</url>
+		<layout>update-site</layout>
+	      </repository>
+	      <repository>
+		<id>orbit</id>
+		<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20130517111416/repository</url>
+		<layout>update-site</layout>
+	      </repository>
+	      <repository>
+		<id>tycho-configurator</id>
+		<url>${tycho-070.site}</url>
+		<layout>update-site</layout>
+	      </repository>
+	    </repositories>
+	    <build>
+	      <plugins>
+		<plugin>
+		  <groupId>org.jboss.apodhrad</groupId>
+		  <artifactId>jbds-plugin</artifactId>
+		  <version>${jbds.plugin.version}</version>
+		  <configuration>
+		    <features>
+		      <param>org.eclipse.swtbot.eclipse.feature.group</param>
+		      <param>org.eclipse.swtbot.eclipse.gef.feature.group</param>
+		      <param>org.eclipse.swtbot.eclipse.test.junit.feature.group</param>
+		      <param>org.eclipse.swtbot.feature.group</param>
+		      <param>org.eclipse.swtbot.forms.feature.group</param>
+		      <param>org.eclipse.swtbot.generator.feature.feature.group</param>
+		      <param>org.eclipse.swtbot.ide.feature.group</param>
+		      <param>org.jboss.reddeer.eclipse.feature.feature.group</param>
+		      <param>org.jboss.reddeer.eclipse.feature.source.feature.group</param>
+		      <param>org.jboss.reddeer.rcp.feature.feature.group</param>
+		      <param>org.jboss.reddeer.rcp.feature.source.feature.group</param>
+		      <param>org.jboss.reddeer.swt.feature.feature.group</param>
+		      <param>org.jboss.reddeer.swt.feature.source.feature.group</param>
+		      <param>org.jboss.reddeer.ui.feature.feature.group</param>
+		      <param>org.jboss.reddeer.ui.feature.source.feature.group</param>
+		      <param>org.jboss.reddeer.gef.feature.feature.group</param>
+		      <param>org.jboss.reddeer.gef.feature.source.feature.group</param>
+		      <param>org.jboss.reddeer.graphiti.feature.feature.group</param>
+		      <param>org.jboss.reddeer.graphiti.feature.source.feature.group</param>
+		      <param>org.custommonkey.xmlunit</param>
+		      <param>org.sonatype.tycho.m2e.feature.feature.group</param>
+		    </features>
+		  </configuration>
+		</plugin>
+	      </plugins>
+	    </build>
+	  </profile>
+	</profiles>
+
 </project>
