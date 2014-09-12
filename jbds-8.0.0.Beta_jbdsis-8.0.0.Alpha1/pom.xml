@@ -78,7 +78,7 @@
 	      </repository>
 	      <repository>
 		<id>reddeer</id>
-		<url>${reddeer-master.site}</url>
+		<url>${reddeer-060.site}</url>
 		<layout>update-site</layout>
 	      </repository>
 	      <repository>
