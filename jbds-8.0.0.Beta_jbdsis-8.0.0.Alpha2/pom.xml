@@ -6,7 +6,7 @@
 	  <artifactId>parent</artifactId>
 	  <version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>jbds-8.0.0.Beta_jbdsis-8.0.0.Alpha1</artifactId>
+	<artifactId>jbds-8.0.0.Beta_jbdsis-8.0.0.Alpha2</artifactId>
 	<packaging>pom</packaging>
 
 	<repositories>
@@ -17,7 +17,7 @@
 	  </repository>
 	  <repository>
 	    <id>jbdsis</id>
-	    <url>http://www.qa.jboss.com/binaries/RHDS/updates/development/luna/integration-stack/aggregate/8.0.0.Alpha1</url>
+	    <url>http://www.qa.jboss.com/binaries/RHDS/updates/development/luna/integration-stack/aggregate/8.0.0.Alpha2</url>
 	    <layout>update-site</layout>
 	  </repository>
 	</repositories>
