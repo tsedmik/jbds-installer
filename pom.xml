@@ -117,6 +117,7 @@
 	  <module>jbds-7.1.1.GA</module>
 	  <module>jbds-7.1.1.GA_jbdsis-7.0.1.GA</module>
 	  <module>jbds-7.1.1.GA_jbdsis-7.0.2.GA</module>
+	  <module>jbds-7.1.1.GA_jbdsis-7.0.3.GA</module>
 	  <module>jbds-8.0.0.Beta</module>
 	  <module>jbds-8.0.0.Beta_jbdsis-8.0.0.Alpha1</module>
 	  <module>jbds-8.0.0.Beta_jbdsis-8.0.0.Alpha2</module>
