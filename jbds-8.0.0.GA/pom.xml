@@ -30,4 +30,31 @@
 	  </plugins>
 	</build>
 
+	<profiles>
+	  <profile>
+	    <id>greclipse</id>
+	    <repositories>
+	      <repository>
+		<id>greclipse</id>
+		<url>http://dist.springsource.org/release/GRECLIPSE/e4.4</url>
+		<layout>update-site</layout>
+	      </repository>
+	    </repositories>
+	    <build>
+	      <plugins>
+		<plugin>
+		  <groupId>org.jboss.apodhrad</groupId>
+		  <artifactId>jbds-plugin</artifactId>
+		  <version>${jbds.plugin.version}</version>
+		  <configuration>
+		    <features>
+		      <param>org.codehaus.groovy.eclipse.feature.feature.group</param>
+		    </features>
+		  </configuration>
+		</plugin>
+	      </plugins>
+	    </build>
+	  </profile>
+	</profiles>
+
 </project>
