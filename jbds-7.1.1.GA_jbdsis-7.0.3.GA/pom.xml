@@ -114,6 +114,11 @@
 		<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20130517111416/repository</url>
 		<layout>update-site</layout>
 	      </repository>
+	      <repository>
+		<id>tycho-configurator</id>
+		<url>${tycho-070.site}</url>
+		<layout>update-site</layout>
+	      </repository>
 	    </repositories>
 	    <build>
 	      <plugins>
@@ -132,8 +137,11 @@
 		      <param>org.eclipse.swtbot.ide.feature.group</param>
 		      <param>org.jboss.reddeer.eclipse.feature.feature.group</param>
 		      <param>org.jboss.reddeer.eclipse.feature.source.feature.group</param>
+		      <param>org.jboss.reddeer.junit.extension.feature.feature.group</param>
+		      <param>org.jboss.reddeer.junit.extension.feature.source.feature.group</param>
 		      <param>org.jboss.reddeer.rcp.feature.feature.group</param>
 		      <param>org.jboss.reddeer.rcp.feature.source.feature.group</param>
+		      <param>org.jboss.reddeer.recorder.feature.feature.group</param>
 		      <param>org.jboss.reddeer.swt.feature.feature.group</param>
 		      <param>org.jboss.reddeer.swt.feature.source.feature.group</param>
 		      <param>org.jboss.reddeer.tests.feature.feature.group</param>
@@ -142,6 +150,7 @@
 		      <param>org.jboss.reddeer.ui.feature.source.feature.group</param>
 		      <param>org.jboss.tools.test.feature.feature.group</param>
 		      <param>org.custommonkey.xmlunit</param>
+		      <param>org.sonatype.tycho.m2e.feature.feature.group</param>
 		    </features>
 		  </configuration>
 		</plugin>
