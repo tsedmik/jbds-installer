@@ -114,6 +114,8 @@
 		      <param>org.eclipse.swtbot.ide.feature.group</param>
 		      <param>org.jboss.reddeer.eclipse.feature.feature.group</param>
 		      <param>org.jboss.reddeer.eclipse.feature.source.feature.group</param>
+		      <param>org.jboss.reddeer.junit.extension.feature.feature.group</param>
+		      <param>org.jboss.reddeer.junit.extension.feature.source.feature.group</param>
 		      <param>org.jboss.reddeer.rcp.feature.feature.group</param>
 		      <param>org.jboss.reddeer.rcp.feature.source.feature.group</param>
 		      <param>org.jboss.reddeer.recorder.feature.feature.group</param>
