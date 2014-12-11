@@ -71,7 +71,7 @@
 		    <url>http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/jbosstools-integration-stack-aggregate-4.2.0.Beta1.zip</url>
 		    <unpack>false</unpack>
 		    <outputDirectory>${project.build.directory}</outputDirectory>
-		    <md5>d3bd0db9417259f42bf0ee950e630b49</md5>
+		    <md5>ba6b62900799f63e32ba52ff623e6292</md5>
 		  </configuration>
 		</execution>
 	      </executions>
