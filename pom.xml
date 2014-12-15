@@ -138,4 +138,13 @@
 	  <module>switchyard_2.0.0.Alpha1</module>
 	</modules>
 
+	<profiles>
+	  <profile>
+	    <id>mirror</id>
+	    <properties>
+	      <jboss.qa.url>download.englab.brq.redhat.com/pub/rhel/jbossqa/services/http</jboss.qa.url>
+	    </properties>
+	  </profile>
+	</profiles>
+
 </project>
