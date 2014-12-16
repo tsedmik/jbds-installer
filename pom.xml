@@ -13,11 +13,7 @@
 	  <jbds-710ga.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/7.1.0.GA.installer/jbdevstudio-product-universal-7.1.0.GA-v20131208-0703-B592.jar</jbds-710ga.installer>
 	  <jbds-711cr1.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/7.1.1.CR1b.installer/jbdevstudio-product-universal-7.1.1.GA-v20140315-1236-B686.jar</jbds-711cr1.installer>
 	  <jbds-711ga.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/7.1.1.GA.installer/jbdevstudio-product-universal-7.1.1.GA-v20140314-2145-B688.jar</jbds-711ga.installer>
-	  <jbds-800alpha.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/8.0.0.Alpha2b.installer/jbdevstudio-product-universal-8.0.0.Alpha2-v20140214-1707-B71.jar</jbds-800alpha.installer>
-	  <jbds-800beta.installer>http://machydra.lab.eng.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/8.0.0.Beta3c-build-core/jboss-devstudio-8.0.0.Beta3-v20140722-2011-B194-installer-standalone.jar</jbds-800beta.installer>
-	  <jbds-800cr1.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/8.0.0.CR1b-build-core/jboss-devstudio-8.0.0.CR1-v20140915-0805-B246-installer-standalone.jar</jbds-800cr1.installer>
 	  <jbds-800ga.installer>http://${jboss.qa.url}/binaries/RHDS/builds/stable/8.0.0.GA-build-core/jboss-devstudio-8.0.0.GA-v20141020-1042-B317-installer-standalone.jar</jbds-800ga.installer>
-	  <jbds-801cr1.installer>http://${jboss.qa.url}/binaries/RHDS/builds/development/8.0.1.CR2-build-core/jboss-devstudio-8.0.1.CR1-v20141207-0100-B352-installer-standalone.jar</jbds-801cr1.installer>
 	  <jbds-801ga.installer>http://${jboss.qa.url}/binaries/RHDS/builds/development/8.0.1.GA-build-core/jboss-devstudio-8.0.1.GA-v20141215-0057-B362-installer-standalone.jar</jbds-801ga.installer>
 	  <!-- Eclipse IDE -->
 	  <eclipse-kepler>jee-kepler-SR2</eclipse-kepler>
@@ -128,8 +124,6 @@
 	  <module>jbds-8.0.0.GA</module>
 	  <module>jbds-8.0.0.GA_jbdsis-8.0.0.Alpha2</module>
 	  <module>jbds-8.0.0.GA_jbdsis-8.0.0.Beta1</module>
-	  <module>jbds-8.0.1.CR1</module>
-	  <module>jbds-8.0.1.CR1_jbdsis-8.0.0.Beta1</module>
 	  <module>jbds-8.0.1.GA</module>
 	  <module>jbds-8.0.1.GA_jbdsis-8.0.0.Beta2</module>
 	  <module>jbt-4.1.1.Final</module>
