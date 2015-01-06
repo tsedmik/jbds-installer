@@ -6,7 +6,7 @@
 	  <artifactId>parent</artifactId>
 	  <version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>jbds-8.0.1.GA_jbdsis-8.0.0.Beta2</artifactId>
+	<artifactId>jbds-8.0.1.GA_jbdsis-8.0.0.Beta2a</artifactId>
 	<packaging>pom</packaging>
 
 	<repositories>
