@@ -39,7 +39,7 @@
 		    <features combine.children="append">
 		      <param>org.eclipse.bpmn2.modeler.feature.group</param>
 		      <param>org.eclipse.bpmn2.modeler.runtime.jboss.feature.group</param>
-		      <param>org.eclipse.bpmn2.feature.feature.group</param>
+		      <param>org.eclipse.bpmn2.feature.group</param>
 		      <param>org.jboss.tools.bpel.feature.feature.group</param>
 		      <param>org.drools.eclipse.feature.feature.group</param>
 		      <param>org.guvnor.tools.feature.feature.group</param>
@@ -130,8 +130,7 @@
 		      <!-- Source Bundles -->
 		      <param>org.eclipse.bpmn2.modeler.source.feature.group</param>
 		      <param>org.eclipse.bpmn2.modeler.runtime.jboss.source.feature.group</param>
-		      <!-- JBTIS-375 -->
-		      <!--param>org.eclipse.bpmn2.feature.source.feature.group</param-->
+		      <param>org.eclipse.bpmn2.source.feature.group</param>
 		      <param>org.jboss.tools.bpel.feature.source.feature.group</param>
 		      <param>org.drools.eclipse.feature.source.feature.group</param>
 		      <param>org.guvnor.tools.feature.source.feature.group</param>
