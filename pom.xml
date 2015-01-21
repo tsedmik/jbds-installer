@@ -18,7 +18,7 @@
 	  <jbds-802ga.installer>http://${jboss.qa.url}/binaries/RHDS/builds/development/8.0.2.GA-build-core/jboss-devstudio-8.0.2.GA-v20150114-2029-B382-installer-standalone.jar</jbds-802ga.installer>
 	  <!-- Eclipse IDE -->
 	  <eclipse-kepler>jee-kepler-SR2</eclipse-kepler>
-	  <eclipse-luna>jee-luna-SR1</eclipse-luna>
+	  <eclipse-luna>jee-luna-SR1a</eclipse-luna>
 	  <!-- Red Deer -->
 	  <reddeer-master.site>http://download.jboss.org/jbosstools/builds/staging/RedDeer_master/all/repo</reddeer-master.site>
 	  <reddeer-050.site>http://download.jboss.org/jbosstools/updates/stable/luna/core/reddeer/0.5.0</reddeer-050.site>
