@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+	  <groupId>org.jboss.apodhrad.jbds.installer</groupId>
+	  <artifactId>parent</artifactId>
+	  <version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>jbds-8.1.0.Beta1</artifactId>
+	<packaging>pom</packaging>
+
+	<build>
+	  <plugins>
+	    <plugin>
+	      <groupId>org.jboss.apodhrad</groupId>
+	      <artifactId>jbds-plugin</artifactId>
+	      <version>${jbds.plugin.version}</version>
+	      <executions>
+		<execution>
+		  <id>jbds</id>
+		  <goals>
+		    <goal>install</goal>
+		  </goals>
+		  <configuration>
+		    <jbds.installer>${jbds-810beta1.installer}</jbds.installer>
+		  </configuration>
+		</execution>
+	      </executions>
+	    </plugin>
+	  </plugins>
+	</build>
+
+	<profiles>
+	  <profile>
+	    <id>greclipse</id>
+	    <repositories>
+	      <repository>
+		<id>greclipse</id>
+		<url>http://dist.springsource.org/release/GRECLIPSE/e4.4</url>
+		<layout>update-site</layout>
+	      </repository>
+	    </repositories>
+	    <build>
+	      <plugins>
+		<plugin>
+		  <groupId>org.jboss.apodhrad</groupId>
+		  <artifactId>jbds-plugin</artifactId>
+		  <version>${jbds.plugin.version}</version>
+		  <configuration>
+		    <features>
+		      <param>org.codehaus.groovy.eclipse.feature.feature.group</param>
+		    </features>
+		  </configuration>
+		</plugin>
+	      </plugins>
+	    </build>
+	  </profile>
+	</profiles>
+
+</project>
