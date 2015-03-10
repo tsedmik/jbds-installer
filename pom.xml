@@ -58,8 +58,10 @@
 	  <eclipse-kepler.site>http://download.eclipse.org/releases/kepler</eclipse-kepler.site>
 	  <eclipse-luna.site>http://download.eclipse.org/releases/luna</eclipse-luna.site>
 	  <!-- Tycho Configurator -->
-	  <tycho-060.site>http://repository.tesla.io:8081/nexus/content/sites/m2e.extras/m2eclipse-tycho/0.6.0/N/0.6.0.201210231015</tycho-060.site>
-	  <tycho-070.site>http://repository.tesla.io:8081/nexus/content/sites/m2e.extras/m2eclipse-tycho/0.7.0/N/0.7.0.201405272100</tycho-070.site>
+	  <tycho-060.site>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.6.0/N/LATEST</tycho-060.site>
+	  <tycho-070.site>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.7.0/N/LATEST</tycho-070.site>
+	  <tycho-080.site>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.8.0/N/LATEST</tycho-080.site>
+	  <tycho-090.site>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.9.0/N/LATEST</tycho-090.site>
 	  <!-- Fuse -->
 	  <fuse-720ci.site>http://download.jboss.org/jbosstools/updates/integration/kepler/soa-tooling/fuse-tooling/7.2.0/all/repo</fuse-720ci.site>
 	  <!-- Other Properties -->
