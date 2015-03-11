@@ -15,6 +15,7 @@
 	  <jbds-711ga.installer>http://${jboss.qa.url}/binaries/RHDS/builds/development/7.1.1.GA.installer/jbdevstudio-product-universal-7.1.1.GA-v20140314-2145-B688.jar</jbds-711ga.installer>
 	  <jbds-800ga.installer>http://${jboss.qa.url}/binaries/RHDS/builds/stable/8.0.0.GA-build-core/jboss-devstudio-8.0.0.GA-v20141020-1042-B317-installer-standalone.jar</jbds-800ga.installer>
 	  <jbds-801ga.installer>http://${jboss.qa.url}/binaries/RHDS/builds/development/8.0.1.GA-build-core/jboss-devstudio-8.0.1.GA-v20141215-0057-B362-installer-standalone.jar</jbds-801ga.installer>
+	  <jbds-802ga.installer>http://${jboss.qa.url}/binaries/RHDS/builds/development/8.0.2.GA-build-core/jboss-devstudio-8.0.2.GA-installer-standalone.jar</jbds-802ga.installer>
 	  <jbds-810beta1.installer>http://${jboss.qa.url}/binaries/RHDS/builds/development/8.1.0.Beta1-build-core/jboss-devstudio-8.1.0.Beta1-installer-standalone.jar</jbds-810beta1.installer>
 	  <!-- Eclipse IDE -->
 	  <eclipse-kepler>jee-kepler-SR2</eclipse-kepler>
