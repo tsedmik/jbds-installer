@@ -6,7 +6,7 @@
 	  <artifactId>parent</artifactId>
 	  <version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>jbds-7.1.1.GA_jbdsis-7.1.0.CR3</artifactId>
+	<artifactId>jbds-7.1.1.GA_jbdsis-7.1.0.GA</artifactId>
 	<packaging>pom</packaging>
 	
 	<repositories>
@@ -17,7 +17,7 @@
 	  </repository>
 	  <repository>
 	    <id>jbdsis</id>
-	    <url>http://www.qa.jboss.com/binaries/RHDS/updates/development/kepler/integration-stack/aggregate/7.1.0.CR3</url>
+	    <url>http://www.qa.jboss.com/binaries/RHDS/updates/development/kepler/integration-stack/aggregate/7.1.0.GA</url>
 	    <layout>update-site</layout>
 	  </repository>
 	</repositories>
