@@ -17,7 +17,7 @@
 	  </repository>
 	  <repository>
 	    <id>jbdsis</id>
-	    <url>http://www.qa.jboss.com/binaries/RHDS/updates/development/kepler/integration-stack/aggregate/7.1.0.GA</url>
+	    <url>http://${jboss.qa.url}/binaries/RHDS/updates/stable/kepler/integration-stack/aggregate/7.1.0.GA</url>
 	    <layout>update-site</layout>
 	  </repository>
 	</repositories>
