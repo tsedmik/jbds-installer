@@ -1,0 +1,69 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+	  <groupId>org.jboss.apodhrad.jbds.installer</groupId>
+	  <artifactId>parent</artifactId>
+	  <version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>jbds-8.1.0.Beta1_fuse-MASTER</artifactId>
+	<packaging>pom</packaging>
+
+	<repositories>
+	  <repository>
+	    <id>jbds</id>
+	    <url>${jbds-800ga.site}</url>
+	    <layout>update-site</layout>
+	  </repository>
+	  <repository>
+	    <id>fuse-MASTER</id>
+	    <url>http://download.jboss.org/jbosstools/updates/integration/luna/integration-stack/fuse-tooling/7.3.0/all/repo/</url>
+	    <layout>update-site</layout>
+	  </repository>
+          <repository>
+            <id>graphiti</id>
+            <url>http://download.eclipse.org/graphiti/updates/0.10.2</url>
+            <layout>update-site</layout>
+          </repository>
+          <repository>
+            <id>gemini</id>
+            <url>http://download.eclipse.org/gemini/updates/management/2.0.0.RELEASE</url>
+            <layout>update-site</layout>
+          </repository>
+	</repositories>
+
+	<build>
+	  <plugins>
+	    <plugin>
+	      <groupId>org.jboss.apodhrad</groupId>
+	      <artifactId>jbds-plugin</artifactId>
+	      <version>${jbds.plugin.version}</version>
+	      <executions>
+		<execution>
+		  <id>jbds</id>
+		  <goals>
+		    <goal>install</goal>
+		  </goals>
+		  <configuration>
+		    <jbds.installer>${jbds-810beta1.installer}</jbds.installer>
+		    <features combine.children="append">
+                      <param>org.eclipse.gemini.management.feature.feature.group</param>
+                      <param>org.eclipse.graphiti.feature.feature.group</param>
+                      <param>org.eclipse.graphiti.feature.examples.feature.group</param>
+                      <param>org.eclipse.graphiti.export.feature.feature.group</param>
+                      <param>org.eclipse.graphiti.sdk.feature.feature.group</param>
+                      <param>org.eclipse.graphiti.sdk.plus.feature.feature.group</param>
+                      <param>org.eclipse.graphiti.feature.tools.feature.group</param>
+		      <param>org.fusesource.ide.camel.editor.feature.feature.group</param>
+		      <param>org.fusesource.ide.core.feature.feature.group</param>
+                      <param>org.fusesource.ide.fabric8.feature.feature.group</param>
+		      <param>org.fusesource.ide.jmx.feature.feature.group</param>
+		      <param>org.fusesource.ide.server.extensions.feature.feature.group</param>
+		    </features>
+		  </configuration>
+		</execution>
+	      </executions>
+	    </plugin>
+	  </plugins>
+	</build>
+</project>
