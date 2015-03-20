@@ -11,7 +11,6 @@
 	  <jbds-502ga.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/5.0.2.GA.installer/jbdevstudio-product-universal-5.0.2.v20130119-0035-H249-GA.jar</jbds-502ga.installer>
 	  <jbds-701ga.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/7.0.1.GA.installer_NOT_RELEASED/jbdevstudio-product-universal-7.0.1.GA-v20130930-2238-B7.jar</jbds-701ga.installer>
 	  <jbds-710ga.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/7.1.0.GA.installer/jbdevstudio-product-universal-7.1.0.GA-v20131208-0703-B592.jar</jbds-710ga.installer>
-	  <jbds-711cr1.installer>http://machydra.brq.redhat.com/www.qa.jboss.com/binaries/RHDS/builds/development/7.1.1.CR1b.installer/jbdevstudio-product-universal-7.1.1.GA-v20140315-1236-B686.jar</jbds-711cr1.installer>
 	  <jbds-711ga.installer>http://${jboss.qa.url}/binaries/RHDS/builds/development/7.1.1.GA.installer/jbdevstudio-product-universal-7.1.1.GA-v20140314-2145-B688.jar</jbds-711ga.installer>
 	  <jbds-800ga.installer>http://${jboss.qa.url}/binaries/RHDS/builds/stable/8.0.0.GA-build-core/jboss-devstudio-8.0.0.GA-v20141020-1042-B317-installer-standalone.jar</jbds-800ga.installer>
 	  <jbds-801ga.installer>http://${jboss.qa.url}/binaries/RHDS/builds/development/8.0.1.GA-build-core/jboss-devstudio-8.0.1.GA-v20141215-0057-B362-installer-standalone.jar</jbds-801ga.installer>
@@ -117,7 +116,6 @@
 	  <module>eclipse-luna</module>
 	  <module>eclipse-luna_jbtis-4.2.0.Alpha1</module>
 	  <module>eclipse-luna_jbtis-4.2.0.Beta1</module>
-	  <module>fuse-7.2.0.CI</module>
 	  <module>jbds-5.0.2.GA</module>
 	  <module>jbds-5.0.2.GA_soa-5.0.6.GA</module>
 	  <module>jbds-7.0.1.GA</module>
@@ -129,17 +127,8 @@
 	  <module>jbds-7.1.1.GA_jbdsis-7.0.3.GA</module>
 	  <module>jbds-7.1.1.GA_jbdsis-7.1.0.GA</module>
 	  <module>jbds-8.0.0.GA</module>
-	  <module>jbds-8.0.0.GA_jbdsis-8.0.0.Alpha2</module>
-	  <module>jbds-8.0.0.GA_jbdsis-8.0.0.Beta1</module>
 	  <module>jbds-8.0.1.GA</module>
-	  <module>jbds-8.0.1.GA_jbdsis-8.0.0.Beta2</module>
-	  <module>jbds-8.0.1.GA_jbdsis-8.0.0.Beta2a</module>
 	  <module>jbds-8.0.2.GA</module>
-	  <module>jbds-8.0.2.GA_jbdsis-8.0.0.Beta2a</module>
-	  <module>jbds-8.0.2.GA_jbdsis-8.0.0.CR1</module>
-	  <module>jbds-8.0.2.GA_jbdsis-8.0.0.CR1.earlyaccess</module>
-	  <module>jbds-8.0.2.GA_jbdsis-8.0.0.CR2</module>
-	  <module>jbds-8.0.2.GA_jbdsis-8.0.0.CR3</module>
 	  <module>jbds-8.0.2.GA_jbdsis-8.0.0.GA</module>
 	  <module>jbds-8.0.2.GA_fuse-MASTER</module>
 	  <module>jbds-8.1.0.Beta1</module>
@@ -150,7 +139,6 @@
 	  <module>jbt-4.1.1.Final</module>
 	  <module>jbt-4.1.1.Final_jbtis-4.1.3.Final</module>
 	  <module>jbt-4.1.1.Final_jbtis-4.1.4.Final</module>
-	  <module>switchyard_2.0.0.Alpha1</module>
 	</modules>
 
 	<profiles>
