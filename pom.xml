@@ -131,6 +131,7 @@
 	  <module>jbds-8.0.1.GA</module>
 	  <module>jbds-8.0.2.GA</module>
 	  <module>jbds-8.0.2.GA_jbdsis-8.0.0.GA</module>
+	  <module>jbds-8.0.2.GA_jbdsis-8.0.1.CR1</module>
 	  <module>jbds-8.0.2.GA_fuse-MASTER</module>
 	  <module>jbds-8.1.0.Beta1</module>
 	  <module>jbds-8.1.0.Beta1_jbdsis-8.0.0.GA</module>
