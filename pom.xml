@@ -15,8 +15,6 @@
 	  <jbds-800ga.installer>http://${jboss.qa.url}/binaries/RHDS/builds/stable/8.0.0.GA-build-core/jboss-devstudio-8.0.0.GA-v20141020-1042-B317-installer-standalone.jar</jbds-800ga.installer>
 	  <jbds-801ga.installer>http://${jboss.qa.url}/binaries/RHDS/builds/development/8.0.1.GA-build-core/jboss-devstudio-8.0.1.GA-v20141215-0057-B362-installer-standalone.jar</jbds-801ga.installer>
 	  <jbds-802ga.installer>http://${jboss.qa.url}/binaries/RHDS/builds/development/8.0.2.GA-build-core/jboss-devstudio-8.0.2.GA-installer-standalone.jar</jbds-802ga.installer>
-	  <jbds-810beta1.installer>http://${jboss.qa.url}/binaries/RHDS/builds/development/8.1.0.Beta1-build-core/jboss-devstudio-8.1.0.Beta1-installer-standalone.jar</jbds-810beta1.installer>
-	  <jbds-810cr1.installer>http://${jboss.qa.url}/binaries/RHDS/builds/development/8.1.0.CR1-build-core/jboss-devstudio-8.1.0.CR1-installer-standalone.jar</jbds-810cr1.installer>
 	  <jbds-810ga.installer>http://${jboss.qa.url}/binaries/RHDS/builds/development/8.1.0.GA-build-core/jboss-devstudio-8.1.0.GA-installer-standalone.jar</jbds-810ga.installer>
 	  <!-- Eclipse IDE -->
 	  <eclipse-kepler>jee-kepler-SR2</eclipse-kepler>
@@ -134,12 +132,6 @@
 	  <module>jbds-8.0.2.GA_jbdsis-8.0.0.GA</module>
 	  <module>jbds-8.0.2.GA_jbdsis-8.0.1.CR1</module>
 	  <module>jbds-8.0.2.GA_fuse-MASTER</module>
-	  <module>jbds-8.1.0.Beta1</module>
-	  <module>jbds-8.1.0.Beta1_jbdsis-8.0.0.GA</module>
-	  <module>jbds-8.1.0.Beta1_fuse-MASTER</module>
-	  <module>jbds-8.1.0.CR1</module>
-	  <module>jbds-8.1.0.CR1_jbdsis-8.0.0.GA</module>
-	  <module>jbds-8.1.0.CR1_jbdsis-8.0.1.CR1</module>
 	  <module>jbds-8.1.0.GA</module>
 	  <module>jbds-8.1.0.GA_jbdsis-8.0.1.CR1</module>
 	  <module>jbt-4.1.1.Final</module>
