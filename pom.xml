@@ -130,11 +130,9 @@
 	  <module>jbds-8.0.1.GA</module>
 	  <module>jbds-8.0.2.GA</module>
 	  <module>jbds-8.0.2.GA_jbdsis-8.0.0.GA</module>
-	  <module>jbds-8.0.2.GA_jbdsis-8.0.1.CR1</module>
 	  <module>jbds-8.0.2.GA_fuse-MASTER</module>
 	  <module>jbds-8.1.0.GA</module>
 	  <module>jbds-8.1.0.GA_jbdsis-8.0.0.GA</module>
-	  <module>jbds-8.1.0.GA_jbdsis-8.0.1.CR1</module>
 	  <module>jbds-8.1.0.GA_jbdsis-8.0.1.GA</module>
 	  <module>jbds-8.1.0.GA_fuse-MASTER</module>
 	  <module>jbt-4.1.1.Final</module>
