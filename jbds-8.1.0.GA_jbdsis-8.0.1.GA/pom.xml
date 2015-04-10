@@ -51,6 +51,7 @@
 		      <param>org.jboss.tools.esb.feature.feature.group</param>
 		      <param>org.fusesource.ide.camel.editor.feature.feature.group</param>
 		      <param>org.fusesource.ide.core.feature.feature.group</param>
+                      <param>org.fusesource.ide.fabric8.feature.feature.group</param>
 		      <param>org.fusesource.ide.jmx.feature.feature.group</param>
 		      <param>org.fusesource.ide.server.extensions.feature.feature.group</param>
 		      <param>org.jbpm.eclipse.feature.feature.group</param>
@@ -142,6 +143,7 @@
 		      <param>org.jboss.tools.esb.feature.source.feature.group</param>
 		      <param>org.fusesource.ide.camel.editor.feature.source.feature.group</param>
 		      <param>org.fusesource.ide.core.feature.source.feature.group</param>
+                      <param>org.fusesource.ide.fabric8.feature.source.feature.group</param>
 		      <param>org.fusesource.ide.jmx.feature.source.feature.group</param>
 		      <param>org.fusesource.ide.server.extensions.feature.source.feature.group</param>
 		      <param>org.jbpm.eclipse.feature.source.feature.group</param>
