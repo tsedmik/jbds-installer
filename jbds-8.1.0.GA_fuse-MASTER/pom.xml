@@ -47,18 +47,12 @@
 		  <configuration>
 		    <jbds.installer>${jbds-810ga.installer}</jbds.installer>
 		    <features combine.children="append">
-                      <param>org.eclipse.gemini.management.feature.feature.group</param>
-                      <param>org.eclipse.graphiti.feature.feature.group</param>
-                      <param>org.eclipse.graphiti.feature.examples.feature.group</param>
-                      <param>org.eclipse.graphiti.export.feature.feature.group</param>
-                      <param>org.eclipse.graphiti.sdk.feature.feature.group</param>
-                      <param>org.eclipse.graphiti.sdk.plus.feature.feature.group</param>
-                      <param>org.eclipse.graphiti.feature.tools.feature.group</param>
 		      <param>org.fusesource.ide.camel.editor.feature.feature.group</param>
 		      <param>org.fusesource.ide.core.feature.feature.group</param>
                       <param>org.fusesource.ide.fabric8.feature.feature.group</param>
 		      <param>org.fusesource.ide.jmx.feature.feature.group</param>
 		      <param>org.fusesource.ide.server.extensions.feature.feature.group</param>
+		      <param>org.jboss.tools.fuse.transformation.feature.feature.group</param>
 		    </features>
 		  </configuration>
 		</execution>
