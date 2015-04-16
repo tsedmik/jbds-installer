@@ -15,21 +15,16 @@
 	    <url>${jbds-800ga.site}</url>
 	    <layout>update-site</layout>
 	  </repository>
+          <repository>
+            <id>jbtis-with-references</id>
+            <url>http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.1.Final/earlyaccess/withreferences/</url>
+            <layout>update-site</layout>
+          </repository>
 	  <repository>
 	    <id>fuse-MASTER</id>
 	    <url>http://download.jboss.org/jbosstools/updates/integration/luna/integration-stack/fuse-tooling/7.3.0/all/repo/</url>
 	    <layout>update-site</layout>
 	  </repository>
-          <repository>
-            <id>graphiti</id>
-            <url>http://download.eclipse.org/graphiti/updates/0.10.2</url>
-            <layout>update-site</layout>
-          </repository>
-          <repository>
-            <id>gemini</id>
-            <url>http://download.eclipse.org/gemini/updates/management/2.0.0.RELEASE</url>
-            <layout>update-site</layout>
-          </repository>
 	</repositories>
 
 	<build>
