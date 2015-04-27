@@ -71,6 +71,10 @@
 		      <param>org.teiid.designer.runtime.feature.feature.group</param>
 		      <param>org.teiid.designer.teiid.client.feature.feature.group</param>
 		    </features>
+		    <programArgs>
+		      <param>-pluginCustomization</param>
+		      <param>${basedir}/resources/pluginCustomization.ini</param>
+		    </programArgs>
 		  </configuration>
 		</execution>
 	      </executions>

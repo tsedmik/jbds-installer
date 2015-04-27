@@ -23,6 +23,10 @@
 		  </goals>
 		  <configuration>
 		    <jbds.installer>${jbds-810ga.installer}</jbds.installer>
+		    <programArgs>
+		      <param>-pluginCustomization</param>
+		      <param>${basedir}/resources/pluginCustomization.ini</param>
+		    </programArgs>
 		  </configuration>
 		</execution>
 	      </executions>
