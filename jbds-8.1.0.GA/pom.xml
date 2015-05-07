@@ -23,7 +23,7 @@
 		  </goals>
 		  <configuration>
 		    <jbds.installer>${jbds-810ga.installer}</jbds.installer>
-		    <programArgs>
+		    <programArgs combine.children="append">
 		      <param>-pluginCustomization</param>
 		      <param>${basedir}/resources/pluginCustomization.ini</param>
 		    </programArgs>
@@ -54,6 +54,24 @@
 		    <features>
 		      <param>org.codehaus.groovy.eclipse.feature.feature.group</param>
 		    </features>
+		  </configuration>
+		</plugin>
+	      </plugins>
+	    </build>
+	  </profile>
+	  <profile>
+	    <id>central</id>
+	    <build>
+	      <plugins>
+		<plugin>
+		  <groupId>org.jboss.apodhrad</groupId>
+		  <artifactId>jbds-plugin</artifactId>
+		  <version>${jbds.plugin.version}</version>
+		  <configuration>
+		    <vmArgs>
+		      <param>-Djboss.discovery.directory.url=http://${jboss.qa.url}/binaries/RHDS/discovery/integration/integration-stack/8.0.2.ER1/devstudio-integration-stack-directory.xml</param>
+		      <param>-Djboss.discovery.site.integration-stack.url=http://${jboss.qa.url}/binaries/RHDS/discovery/integration/integration-stack/8.0.2.ER1</param>
+		    </vmArgs>
 		  </configuration>
 		</plugin>
 	      </plugins>
