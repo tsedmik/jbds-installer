@@ -1,0 +1,59 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+	  <groupId>org.jboss.apodhrad.jbds.installer</groupId>
+	  <artifactId>parent</artifactId>
+	  <version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>jbds-8.1.0.GA_fuse-7.3.0.CR1</artifactId>
+	<packaging>pom</packaging>
+
+	<repositories>
+	  <repository>
+	    <id>jbds</id>
+	    <url>${jbds-800ga.site}</url>
+	    <layout>update-site</layout>
+	  </repository>
+          <repository>
+            <id>jbtis-with-references</id>
+            <url>http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.2.ER1/earlyaccess/withreferences/</url>
+            <layout>update-site</layout>
+          </repository>
+	  <repository>
+	    <id>fuse</id>
+	    <url>http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/fuse-tooling/7.3.0.CR1/all/repo/</url>
+	    <layout>update-site</layout>
+	  </repository>
+	</repositories>
+
+	<build>
+	  <plugins>
+	    <plugin>
+	      <groupId>org.jboss.apodhrad</groupId>
+	      <artifactId>jbds-plugin</artifactId>
+	      <version>${jbds.plugin.version}</version>
+	      <executions>
+		<execution>
+		  <id>jbds</id>
+		  <goals>
+		    <goal>install</goal>
+		  </goals>
+		  <configuration>
+		    <jbds.installer>${jbds-810ga.installer}</jbds.installer>
+		    <features combine.children="append">
+		      <param>org.fusesource.ide.camel.editor.feature.feature.group</param>
+		      <param>org.fusesource.ide.core.feature.feature.group</param>
+                      <param>org.fusesource.ide.fabric8.feature.feature.group</param>
+		      <param>org.fusesource.ide.jmx.feature.feature.group</param>
+		      <param>org.fusesource.ide.server.extensions.feature.feature.group</param>
+		      <param>org.jboss.tools.fuse.transformation.feature.feature.group</param>
+		    </features>
+		  </configuration>
+		</execution>
+	      </executions>
+	    </plugin>
+	  </plugins>
+	</build>
+	
+</project>
