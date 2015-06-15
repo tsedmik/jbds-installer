@@ -69,8 +69,8 @@
 		  <version>${jbds.plugin.version}</version>
 		  <configuration>
 		    <vmArgs>
-		      <param>-Djboss.discovery.directory.url=http://${jboss.qa.url}/binaries/RHDS/discovery/integration/integration-stack/8.0.2.ER1/devstudio-integration-stack-directory.xml</param>
-		      <param>-Djboss.discovery.site.integration-stack.url=http://${jboss.qa.url}/binaries/RHDS/discovery/integration/integration-stack/8.0.2.ER1</param>
+		      <param>-Djboss.discovery.directory.url=http://${jboss.qa.url}/binaries/RHDS/discovery/integration/integration-stack/8.0.2.CR3/devstudio-integration-stack-directory.xml</param>
+		      <param>-Djboss.discovery.site.integration-stack.url=http://${jboss.qa.url}/binaries/RHDS/discovery/integration/integration-stack/8.0.2.CR3</param>
 		    </vmArgs>
 		  </configuration>
 		</plugin>
