@@ -20,6 +20,7 @@
 	  <!-- Eclipse IDE -->
 	  <eclipse-kepler>jee-kepler-SR2</eclipse-kepler>
 	  <eclipse-luna>jee-luna-SR2</eclipse-luna>
+	  <eclipse-mars>jee-mars-R</eclipse-mars>
 	  <!-- Red Deer -->
 	  <reddeer-master.site>http://download.jboss.org/jbosstools/builds/staging/RedDeer_master/all/repo</reddeer-master.site>
 	  <reddeer-050.site>http://download.jboss.org/jbosstools/updates/stable/luna/core/reddeer/0.5.0</reddeer-050.site>
@@ -117,6 +118,7 @@
 	  <module>eclipse-luna</module>
 	  <module>eclipse-luna_jbtis-4.2.0.Alpha1</module>
 	  <module>eclipse-luna_jbtis-4.2.0.Beta1</module>
+	  <module>eclipse-mars</module>
 	  <module>jbds-5.0.2.GA</module>
 	  <module>jbds-5.0.2.GA_soa-5.0.6.GA</module>
 	  <module>jbds-7.0.1.GA</module>
