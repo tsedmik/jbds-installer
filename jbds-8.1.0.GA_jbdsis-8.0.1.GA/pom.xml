@@ -75,6 +75,9 @@
 		      <param>-pluginCustomization</param>
 		      <param>${basedir}/resources/pluginCustomization.ini</param>
 		    </programArgs>
+		    <vmArgs>
+		      <param>-Dorg.jboss.tools.central.donotshow=true</param>
+		    </vmArgs>
 		  </configuration>
 		</execution>
 	      </executions>
