@@ -16,6 +16,7 @@
 	  <jbds-801ga.installer>http://${jboss.qa.url}/binaries/RHDS/builds/development/8.0.1.GA-build-core/jboss-devstudio-8.0.1.GA-v20141215-0057-B362-installer-standalone.jar</jbds-801ga.installer>
 	  <jbds-802ga.installer>http://${jboss.qa.url}/binaries/RHDS/builds/development/8.0.2.GA-build-core/jboss-devstudio-8.0.2.GA-installer-standalone.jar</jbds-802ga.installer>
 	  <jbds-810ga.installer>http://${jboss.qa.url}/binaries/RHDS/builds/development/8.1.0.GA-build-core/jboss-devstudio-8.1.0.GA-installer-standalone.jar</jbds-810ga.installer>
+	  <jbds-900beta1.installer>http://${jboss.qa.url}/binaries/RHDS/builds/staging/devstudio.product_9.0.mars/latest/installer/jboss-devstudio-9.0.0.Beta1-v20150619-0205-B58-installer-standalone.jar</jbds-900beta1.installer>
 	  <!-- Eclipse IDE -->
 	  <eclipse-kepler>jee-kepler-SR2</eclipse-kepler>
 	  <eclipse-luna>jee-luna-SR2</eclipse-luna>
@@ -48,7 +49,7 @@
 	  <jbdsis-702cr2.site>http://www.qa.jboss.com/binaries/RHDS/updates/development/kepler/integration-stack/aggregate/7.0.2.CR2</jbdsis-702cr2.site>
 	  <jbtis-420alpha1.site>http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.0.Alpha1/</jbtis-420alpha1.site>
 	  <!-- JBDS Plugin -->
-	  <jbds.plugin.version>0.0.7</jbds.plugin.version>
+	  <jbds.plugin.version>0.0.8</jbds.plugin.version>
 	  <!-- JBoss Tools -->
 	  <jbt-juno.site>http://download.jboss.org/jbosstools/updates/stable/juno</jbt-juno.site>
 	  <jbt-401final.site>http://download.jboss.org/jbosstools/updates/stable/juno</jbt-401final.site>
@@ -138,6 +139,7 @@
 	  <module>jbds-8.1.0.GA_fuse-MASTER</module>
 	  <module>jbds-8.1.0.GA_fuse-7.3.0.Beta5</module>
 	  <module>jbds-8.1.0.GA_fuse-7.3.0.CR1</module>
+	  <module>jbds-9.0.0.Beta1</module>
 	  <module>jbt-4.1.1.Final</module>
 	  <module>jbt-4.1.1.Final_jbtis-4.1.3.Final</module>
 	  <module>jbt-4.1.1.Final_jbtis-4.1.4.Final</module>
