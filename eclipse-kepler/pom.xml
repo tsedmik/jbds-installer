@@ -9,6 +9,10 @@
 	<artifactId>eclipse-kepler</artifactId>
 	<packaging>pom</packaging>
 	
+	<properties>
+	  <jbds.executable>${project.build.directory}${file.separator}eclipse${file.separator}eclipse</jbds.executable>
+	</properties>
+	
 	<build>
 	  <plugins>
 	    <plugin>
@@ -46,5 +50,5 @@
 	    </plugin>
 	  </plugins>
 	</build>
-
+	
 </project>

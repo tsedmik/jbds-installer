@@ -75,6 +75,7 @@
 	  <jboss.qa.url>www.qa.jboss.com</jboss.qa.url>
 	  <requirementsDirectory>${project.build.directory}/requirements</requirementsDirectory>
 	  <swtbot.properties>${requirementsDirectory}/swtbot.properties</swtbot.properties>
+	  <jbds.executable>${project.build.directory}${file.separator}jbdevstudio${file.separator}studio${file.separator}jbdevstudio</jbds.executable>
 	</properties>
 
 	<repositories>
@@ -174,7 +175,7 @@
 		    </execution>
 		  </executions>
 		  <configuration>
-		    <executable>${project.build.directory}${file.separator}jbdevstudio${file.separator}studio${file.separator}${jbds.executable}</executable>
+		    <executable>${jbds.executable}</executable>
 		    <workingDirectory>${project.build.directory}</workingDirectory>
 		    <arguments>
 		      <argument>-data</argument>
@@ -193,7 +194,7 @@
 	      </os>
 	    </activation>
 	    <properties>
-	      <jbds.executable>jbdevstudio.exe</jbds.executable>
+	      <jbds.executable>${project.build.directory}${file.separator}jbdevstudio${file.separator}studio${file.separator}jbdevstudio.exe</jbds.executable>
 	    </properties>
 	  </profile>
 	</profiles>
