@@ -30,6 +30,9 @@
 	  <swtbot-indigo.site>http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site</swtbot-indigo.site>
 	  <swtbot-juno.site>http://download.eclipse.org/technology/swtbot/releases/latest</swtbot-juno.site>
 	  <swtbot-latest.site>http://download.eclipse.org/technology/swtbot/releases/latest</swtbot-latest.site>
+	  <!-- BPEL -->
+	  <bpel-luna.site>http://download.eclipse.org/bpel/site/1.0.5</bpel-luna.site>
+	  <bpel-latest.site>http://download.eclipse.org/bpel/site/</bpel-latest.site>
 	  <!-- SWT Bot Ext -->
 	  <tests-indigo.site>http://download.jboss.org/jbosstools/updates/nightly/coretests/3.3.indigo</tests-indigo.site>
 	  <tests-juno.site>http://download.jboss.org/jbosstools/updates/nightly/coretests/4.0.juno</tests-juno.site>
