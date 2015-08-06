@@ -6,7 +6,7 @@
 	  <artifactId>parent</artifactId>
 	  <version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>jbds-9.0.0.Beta1</artifactId>
+	<artifactId>jbds-9.0.0.Beta2</artifactId>
 	<packaging>pom</packaging>
 
 	<build>
@@ -22,7 +22,7 @@
 		    <goal>install</goal>
 		  </goals>
 		  <configuration>
-		    <jbds.installer>${jbds-900beta1.installer}</jbds.installer>
+		    <jbds.installer>${jbds-900beta2.installer}</jbds.installer>
 		    <programArgs combine.children="append">
 		      <param>-pluginCustomization</param>
 		      <param>${basedir}/resources/pluginCustomization.ini</param>
